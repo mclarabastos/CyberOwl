@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberOwl</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/APIs.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <h1>CyberOwl</h1>
+        </div>
+
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="#Inicio" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Boletim" class="nav-link">Boletim</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Verificar-Url" class="nav-link">Verificador de URL</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Contatos" class="nav-link">Contatos</a>
+            </li>
+            <li class="nav-item">
+              <a href="cadastro.html" class="nav-link">Cadastro/Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="sobre.html" class="nav-link">Sobre Nós</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button>
+            <img
+              src="../img/menu_white_36dp.svg"
+              class="icon"
+              onclick="menuShow();"
+            />
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu">
+        <ul style="list-style-type: none; padding: 0; margin: 0">
+          <li class="nav-item">
+            <a href="index.html#Inicio" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#Boletim" class="nav-link">Boletim</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#Verificar-Url" class="nav-link"
+              >Verificador de URL</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="index.html#Contatos" class="nav-link">Contatos</a>
+          </li>
+          <li class="nav-item">
+            <a href="cadastro.html" class="nav-link">Cadastro</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="Introdução">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Texto (Título e Subtítulo) -->
+        <div class="col-md-6" id="texto">
+          <h1>Estratégias de Cibersegurança para Proteção Total</h1>
+          <p>
+            Fique à frente dos cibercriminosos com os recursos especializados da
+            CyberOwl. Fornecemos ferramentas e suporte essenciais para proteger
+            sua presença digital e ajudá-lo a se recuperar de ataques de
+            phishing.
+          </p>
+        </div>
+        <!-- Imagem -->
+        <div class="col-md-6 text-center" id="img">
+          <img
+            src="../img/img-removebg-preview.png"
+            alt="Imagem"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--
+    <section id="Conheça-nos" class="container mt-5">
+      <h2>Conheça-nos</h2>
+      <p>
+        Bem-vindo ao CyberOwl! Aqui, oferecemos as ferramentas e informações
+        necessárias para proteger suas informações pessoais contra phishing e
+        outras ameaças cibernéticas. Navegue pelo nosso site para descobrir como
+        identificar e evitar fraudes online, verificar links suspeitos e
+        manter-se atualizado com as últimas notícias sobre segurança. Nossa
+        missão é garantir que você esteja sempre um passo à frente das ameaças
+        digitais.
+      </p> 
+    </section>
+    -->
+
+    <section id="Phishing" class="container mt-5">
+      <h2>O que é Phishing?</h2>
+      <h5>
+        Phishing é um tipo de ataque cibernético que usa e-mails, mensagens de
+        texto, telefonemas ou sites fraudulentos para enganar as pessoas a
+        compartilhar dados confidenciais, baixar malware ou se expor a crimes
+        cibernéticos de outras formas.
+      </h5>
+      <p>
+        Ataques de phishing são uma forma de engenharia social. Ao contrário de
+        outros ataques cibernéticos, que têm como alvo direto redes e recursos,
+        os ataques de engenharia social usam erros humanos, histórias falsas e
+        táticas de pressão para manipular as vítimas e causar danos
+        involuntários a si mesmas ou a suas organizações.
+      </p>
+      <p>
+        Em um golpe típico de phishing, um hacker finge ser alguém em quem a
+        vítima confia, como um colega, chefe, figura de autoridade ou
+        representante de uma marca conhecida. O hacker envia uma mensagem
+        direcionando a vítima para pagar uma fatura, abrir um anexo, clicar em
+        um link ou realizar alguma outra ação.
+      </p>
+      <p>
+        Por confiar na suposta fonte da mensagem, o usuário segue as instruções
+        e cai na armadilha do golpista. Essa "fatura" pode levar diretamente à
+        conta de um hacker. Esse anexo pode instalar ransomware no dispositivo
+        do usuário. Esse link pode levar o usuário a um site que rouba números
+        de cartões de crédito, números de contas bancárias, credenciais de login
+        ou outros dados pessoais.
+      </p>
+
+      <h2>Por que o phishing é uma grande ameaça cibernética?</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <div class="columns">
+        <div class="tiposPhishing">
+          <h2>Tipos de ataques de Phishing</h2>
+          <p>
+            A palavra "phishing" joga com o fato de que os golpistas usam
+            "iscas" atraentes para enganar suas vítimas, da mesma forma que os
+            pescadores usam iscas para fisgar peixes reais. No phishing, as
+            iscas são mensagens fraudulentas que parecem críveis e evocam
+            emoções fortes como medo, ganância e curiosidade. Os tipos de iscas
+            que os golpistas de phishing usam dependem de quem e do que eles
+            estão procurando. Alguns exemplos comuns de ataques de phishing
+            incluem:
+          </p>
+
+          <h3>Phishing de e-mail em massa</h3>
+          <p>
+            No phishing de e-mails em massa, golpistas enviam spam para muitas
+            pessoas, tentando atrair algumas vítimas. Eles disfarçam os e-mails
+            como se fossem de marcas conhecidas, aumentando a chance de enganar
+            quem é cliente dessas empresas. Para tornar os e-mails mais
+            convincentes, usam logotipos, falsificam endereços de e-mail e
+            copiam mensagens reais. Os e-mails geralmente apelam para emoções ou
+            urgência, com assuntos como “Problema com seu pedido”. As mensagens
+            pedem ações que levam à exposição de dados ou download de malware.
+            Algumas campanhas de phishing coincidem com eventos populares, como
+            o Prime Day, aproveitando a baixa cautela dos usuários.
+          </p>
+
+          <h3>Spear phishing</h3>
+          <p>
+            Spear phishing é um ataque de phishing altamente direcionado, focado
+            em uma pessoa com acesso a informações confidenciais, como um
+            gerente financeiro. O golpista pesquisa detalhadamente seu alvo,
+            coletando dados em redes sociais e sites profissionais para se
+            passar por alguém de confiança, como um colega ou chefe, tornando a
+            mensagem mais convincente. Quando o alvo é um executivo de alto
+            nível ou uma pessoa de alto valor, o ataque é conhecido como
+            "whaling".
+          </p>
+
+          <h3>Outras técnicas de Phishing</h3>
+
+          <h4>Smishing</h4>
+          <p>
+            O phishing por SMS, ou smishing, usa mensagens de texto falsas para
+            enganar os alvos. Os golpistas geralmente se passam pelo provedor de
+            telefonia móvel da vítima, enviando um texto que oferece um
+            "presente gratuito" ou pede que o usuário atualize suas informações
+            de cartão de crédito.
+          </p>
+
+          <h4>Vishing</h4>
+          <p>
+            O vishing, ou phishing por voz, é um golpe realizado por chamadas
+            telefônicas, que cresceu 260% entre 2022 e 2023 devido ao uso de
+            tecnologia VoIP, permitindo milhões de chamadas automatizadas por
+            dia. Os golpistas falsificam o identificador de chamadas para
+            parecerem legítimos e assustam as vítimas com avisos falsos sobre
+            problemas financeiros ou legais, levando-as a fornecer dados
+            confidenciais ou dinheiro para "solucionar" os problemas.
+          </p>
+
+          <h4>Phishing nas redes sociais</h4>
+          <p>
+            O phishing nas redes sociais utiliza mensagens diretas de
+            plataformas como Facebook Messenger, LinkedIn e X (antigo Twitter)
+            para enganar usuários. Golpistas fingem precisar de ajuda para fazer
+            login ou vencer um concurso, visando roubar credenciais de login e
+            assumir o controle das contas. Essa prática é especialmente
+            prejudicial para quem reutiliza senhas em várias contas.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--
+  <div class="container">
+    <h1 class="h1">Métodos para se Proteger do Phishing</h1>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Verificar remetentes e URLs</h5>
+            <p class="card-text">Antes de clicar em links ou abrir anexos, sempre verifique o endereço de e-mail do metente e o URL do site. Golpistas podem usar endereços semelhantes aos oficiais.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Desconfie de mensagens urgentes</h5>
+            <p class="card-text">Phishing geralmente usa táticas de urgência, como ameaças de bloqueio de contas ou ofertas tentadoras. Evite tomar decisões apressadas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Não clique em links suspeitos</h5>
+            <p class="card-text">Passe o mouse sobre os links para verificar se o endereço corresponde ao destino esperado. Evite clicar diretamente em links de e-mails ou mensagens não solicitadas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Use software de segurança</h5>
+            <p class="card-text">Instale e mantenha atualizado um antivírus e programas de segurança para bloquear sites maliciosos e possíveis ataques.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Atualize regularmente seus dispositivos</h5>
+            <p class="card-text">Mantenha o sistema operacional e os aplicativos atualizados para corrigir vulnerabilidades exploradas em ataques de phishing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Cuidado com anexos desconhecidos</h5>
+            <p class="card-text">Evite baixar e abrir anexos de e-mails ou mensagens de remetentes desconhecidos, pois podem conter malware.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    <div class="video-container">
+      <h2>
+        Phishing, Vishing e Smishing: Aprenda a Proteger-se de Golpes Digitais!
+      </h2>
+      <p></p>
+      <iframe
+        src="https://www.youtube.com/embed/5nkWQZvomVA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
+    <div class="container" id="sinaisPhishing">
+      <h2>Quais são os sinais de um ataque de phishing?</h2>
+      <h5>
+        Os detalhes podem variar de golpe a golpe, mas há alguns sinais comuns
+        que indicam que uma mensagem pode ser uma tentativa de phishing. Esses
+        sinais incluem:
+      </h5>
+      <ul>
+        <li>
+          <strong>Emoções fortes e táticas de pressão:</strong>
+          Os golpes de phishing tentam fazer com que as vítimas sintam um senso
+          de urgência para que elas ajam rapidamente sem pensar. Os golpistas
+          costumam fazer isso invocando emoções fortes, como medo, ganância e
+          curiosidade. Podem impor prazos e ameaçar consequências irrealistas,
+          como a prisão.
+        </li>
+        <li>
+          <strong
+            >Solicitações de dinheiro ou informações confidenciais:</strong
+          >
+          Os golpes de phishing normalmente pedem uma de duas coisas: dinheiro
+          ou dados. Solicitações não solicitadas ou inesperadas de pagamento ou
+          informações pessoais podem ser sinais de ataques de phishing.
+        </li>
+        <li>
+          <strong>URLs e endereços de e-mail falsos:</strong>
+          Os golpistas geralmente usam URLs e endereços de e-mail que parecem
+          legítimos à primeira vista. Por exemplo, um e-mail de
+          "admin@rnicrosoft.com" pode parecer seguro, mas é preciso verificar
+          novamente. O "m" em "Microsoft" é na verdade um "r" e um "n." Outra
+          tática comum é usar um URL como "bankingapp.scamsite.com". Um usuário
+          pode pensar que isso se vincula a bankingapp.com, mas na verdade
+          aponta para um subdomínio de scamsite.com. Os hackers também podem
+          usar serviços de encurtamento de links para disfarçar URLs maliciosos.
+        </li>
+        <li>
+          <strong>Erros de ortografia e gramática:</strong>
+          Muitas gangues de phishing operam internacionalmente, o que significa
+          que muitas vezes escrevem mensagens de phishing em idiomas que não
+          falam fluentemente. Portanto, muitas tentativas de phishing contêm
+          erros gramaticais e inconsistências.
+        </li>
+      </ul>
+    </div>
+    <div class="verificador mt-5" id="VerificaUrl">
+      <div class="col-md">
+        <h2>Verifique a sua URL</h2>
+        <p>Insira a URL que você deseja verificar sua confiança abaixo:</p>
+        <input
+          type="text"
+          class="form-control"
+          id="url"
+          placeholder="Digite a URL aqui"
+          aria-label="Digite a URL"
+        />
+        <button class="btn btn-primary" onclick="verificar();">
+          Verificar
+        </button>
+        <p id="res"></p>
+      </div>
+    </div>
+    <!--
+  <section id="Vitimas" class="container mt-5">
+    <h2 id="Boletim">O que fazer em caso de ser uma vítima</h2>
+    <p>
+      Se você foi vítima de phishing ou esta desconfiado de um possivel
+      ataque, é importante agir rapidamente para minimizar os danos.
+    </p>
+    <ol>
+      <li>Desconecte-se e verifique a segurança:</li>
+      <ul>
+        <li>
+          Desconecte-se imediatamente do site ou app e altere suas senhas,
+          priorizando contas importantes (e-mail, banco, redes sociais). Use
+          senhas fortes e ative a autenticação de dois fatores (2FA).
+        </li>
+      </ul>
+      <li>Monitore suas contas:</li>
+      <ul>
+        <li>
+          Verifique suas contas bancárias para detectar atividades suspeitas e
+          comunique instituições financeiras sobre possíveis fraudes.
+        </li>
+      </ul>
+      <li>Verifique seu dispositivo:</li>
+      <ul>
+        <li>
+          Faça uma verificação de malware com um software antivírus e mantenha
+          seu sistema e aplicativos atualizados.
+        </li>
+      </ul>
+      <li>Monitore informações pessoais:</li>
+      <ul>
+        <li>
+          Verifique o uso indevido de seus dados pessoais. Use serviços de
+          proteção ao crédito, como Serasa ou SPC.
+        </li>
+      </ul>
+      <li>Denúncia ou incidente</li>
+      <ul>
+        <li>
+          Embora o CyberOwl tenha a intenção de promover a prevenção e
+          mitigação, isso não substitui a necessidade de buscar as
+          autoridades. Registrar um boletim de ocorrência é fundamental em
+          tais situações. Para fazer isso, acesse
+          <a href="#" target="_blank">este link</a>.
+        </li>
+      </ul>
+    </ol>
+  </section>
+  -->
+    <section id="Vitimas" class="container mt-5">
+      <h2 id="Boletim">O que fazer em caso de ser uma vítima</h2>
+      <p>
+        Se você foi vítima de phishing ou está desconfiado de um possível
+        ataque, é importante agir rapidamente para minimizar os danos.
+      </p>
+      <ol>
+        <li>
+          <strong>Desconecte-se e verifique a segurança:</strong>
+          <p>
+            Desconecte-se imediatamente do site ou app e altere suas senhas,
+            priorizando contas importantes (e-mail, banco, redes sociais). Use
+            senhas fortes e ative a autenticação de dois fatores (2FA).
+          </p>
+        </li>
+        <li>
+          <strong>Monitore suas contas:</strong>
+          <p>
+            Verifique suas contas bancárias para detectar atividades suspeitas e
+            comunique instituições financeiras sobre possíveis fraudes.
+          </p>
+        </li>
+        <li>
+          <strong>Verifique seu dispositivo:</strong>
+          <p>
+            Faça uma verificação de malware com um software antivírus e mantenha
+            seu sistema e aplicativos atualizados.
+          </p>
+        </li>
+        <li>
+          <strong>Monitore informações pessoais:</strong>
+          <p>
+            Verifique o uso indevido de seus dados pessoais. Use serviços de
+            proteção ao crédito, como Serasa ou SPC.
+          </p>
+        </li>
+        <li>
+          <strong>Denúncia ou incidente:</strong>
+          <p>
+            Embora o CyberOwl tenha a intenção de promover a prevenção e
+            mitigação, isso não substitui a necessidade de buscar as
+            autoridades. Registrar um boletim de ocorrência é fundamental em
+            tais situações. Para fazer isso, acesse
+            <a href="#" target="_blank">este link</a>.
+          </p>
+        </li>
+      </ol>
+    </section>
+    <section id="Noticias" class="container mt-5">
+      <h2>Dê o proximo passo</h2>
+      <h5>
+        Cadastre-se no nosso site e receba as ultimas noticias de PHISHING no
+        seu Email.
+      </h5>
+      <p>
+        Mantenha-se informado para estar sempre preparado e protegido contra
+        fraudes online com CyberOwl. Volte frequentemente para atualizações e
+        dicas essenciais sobre como manter suas informações seguras. Faça o seu
+        cadastro <a href="../html/cadastro.html" target="_blank">aqui</a>.
+      </p>
+    </section>
+
+    <footer class="container mt-5">
+      <!-- RodaPé -->
+      <div id="Contatos">
+        <p>Email: CyberOwl@gmail.com</p>
+        <p>Whatsapp: (21) 99999-9999</p>
+        <p>Desenvolvedores: Amanda, Gustavo, Julio, Liz, Maria</p>
+        <p>© 2024 Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
