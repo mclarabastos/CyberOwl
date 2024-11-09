@@ -10,7 +10,7 @@ header {
 
 }
 
-.logo, a {
+.logo, .nav-link {
     color: white;
 }
 
@@ -35,9 +35,6 @@ header {
 
 .nav-item {
     margin-right: 10px;
-}
-
-p {
     padding: 10px;
 }
 
