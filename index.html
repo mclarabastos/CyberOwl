@@ -10,72 +10,34 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/APIs.js" defer></script>
-    <script src="../js/menu.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <script src="js/APIs.js" defer></script>
+    <script src="js/menu.js" defer></script>
   </head>
   <body>
     <header>
       <nav class="nav-bar">
-        <div class="logo">
-          <h1>CyberOwl</h1>
+        <div class="logo_button">
+          <div class="logo">
+            <h1>CyberOwl</h1>
+          </div>
+          <div class="btn">
+            <button onclick="EMmenu()"><img id="img" src="img/menu_white_36dp.svg" alt=""></button>
+          </div>
         </div>
-
-        <div class="nav-list">
-          <ul>
-            <li class="nav-item">
-              <a href="#Inicio" class="nav-link">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#Boletim" class="nav-link">Boletim</a>
-            </li>
-            <li class="nav-item">
-              <a href="#Verificar-Url" class="nav-link">Verificador de URL</a>
-            </li>
-            <li class="nav-item">
-              <a href="#Contatos" class="nav-link">Contatos</a>
-            </li>
-            <li class="nav-item">
-              <a href="cadastro.html" class="nav-link">Cadastro/Login</a>
-            </li>
-            <li class="nav-item">
-              <a href="sobre.html" class="nav-link">Sobre Nós</a>
-            </li>
-          </ul>
+    
+    
+        <div class="nav-list esconder" id="menu">
+          <p class="nav-item p1"><a href="#Inicio" class="nav-link">Inicio</a></p>
+          <p class="nav-item p2"><a href="#Boletim" class="nav-link">Boletim</a></p>
+          <p class="nav-item p1"><a href="#Verificar-Url" class="nav-link">Verificador de URL</a></p>
+          <p class="nav-item p2"><a href="#Contatos" class="nav-link">Contatos</a></p>
+          <p class="nav-item p1"><a href="html/cadastro.html" class="nav-link">Cadastro/Login</a></p>
+          <p class="nav-item p2"><a href="html/sobre.html" class="nav-link">Sobre Nós</a></p>
         </div>
-
-        <div class="mobile-menu-icon">
-          <button>
-            <img
-              src="../img/menu_white_36dp.svg"
-              class="icon"
-              onclick="menuShow();"
-            />
-          </button>
-        </div>
+    
       </nav>
-
-      <div class="mobile-menu">
-        <ul style="list-style-type: none; padding: 0; margin: 0">
-          <li class="nav-item">
-            <a href="index.html#Inicio" class="nav-link">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html#Boletim" class="nav-link">Boletim</a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html#Verificar-Url" class="nav-link"
-              >Verificador de URL</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="index.html#Contatos" class="nav-link">Contatos</a>
-          </li>
-          <li class="nav-item">
-            <a href="cadastro.html" class="nav-link">Cadastro</a>
-          </li>
-        </ul>
-      </div>
     </header>
 
     <section id="Introdução">
@@ -92,7 +54,7 @@
         </div>
         <!-- Imagem -->
         <div class="col-md-6 text-center" id="img">
-          <img src="../img/principal.png" alt="Imagem" class="img-fluid" />
+          <img src="img/principal.png" alt="Imagem" class="img-fluid" />
         </div>
       </div>
     </section>
@@ -139,7 +101,7 @@
           contas bancárias, credenciais de login ou outros dados pessoais.
         </p>
         <div id="imgAnzol">
-          <img src="../img/anzol.png" alt="Imagem" class="img-fluid" />
+          <img src="img/anzol.png" alt="Imagem" class="img-fluid" />
         </div>
       </div>
 
@@ -482,7 +444,7 @@
         Mantenha-se informado para estar sempre preparado e protegido contra
         fraudes online com CyberOwl. Volte frequentemente para atualizações e
         dicas essenciais sobre como manter suas informações seguras. Faça o seu
-        cadastro <a href="../html/cadastro.html" target="_blank">aqui</a>.
+        cadastro <a href="html/cadastro.html" target="_blank">aqui</a>.
       </p>
     </section>
 
@@ -491,7 +453,7 @@
       <div id="Contatos">
         <p>Email: CyberOwl@gmail.com</p>
         <p>Whatsapp: (21) 99999-9999</p>
-        <p>Desenvolvedores: Amanda, Gustavo, Julio, Liz, Maria</p>
+        <p>Desenvolvedores: Gustavo, Julio, Liz, Maria</p>
         <p>© 2024 Todos os direitos reservados</p>
       </div>
     </footer>
