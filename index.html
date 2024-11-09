@@ -16,20 +16,20 @@
     <script src="js/menu.js" defer></script>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="nav-bar">
         <div class="logo_button">
           <div class="logo">
-            <h1>CyberOwl</h1>
+            <h1 class="lg">CyberOwl</h1>
           </div>
-          <div class="btn">
+          <div class="nav-btn">
             <button onclick="EMmenu()"><img id="img" src="img/menu_white_36dp.svg" alt=""></button>
           </div>
         </div>
     
     
         <div class="nav-list esconder" id="menu">
-          <p class="nav-item p1"><a href="#Inicio" class="nav-link">Inicio</a></p>
+          <p class="nav-item p1"><a href="#Introdução" class="nav-link">Inicio</a></p>
           <p class="nav-item p2"><a href="#Boletim" class="nav-link">Boletim</a></p>
           <p class="nav-item p1"><a href="#Verificar-Url" class="nav-link">Verificador de URL</a></p>
           <p class="nav-item p2"><a href="#Contatos" class="nav-link">Contatos</a></p>
@@ -83,6 +83,7 @@
           compartilhar dados confidenciais, baixar malware ou se expor a crimes
           cibernéticos de outras formas.
         </h5>
+        <div class="pimg">
         <p>
           Ataques de phishing são uma forma de engenharia social. Ao contrário
           de outros ataques cibernéticos, que têm como alvo direto redes e
@@ -100,8 +101,7 @@
           usuário a um site que rouba números de cartões de crédito, números de
           contas bancárias, credenciais de login ou outros dados pessoais.
         </p>
-        <div id="imgAnzol">
-          <img src="img/anzol.png" alt="Imagem" class="img-fluid" />
+          <img src="img/anzol.png" alt="Imagem" id="imgAnzol" class="img-fluid" />
         </div>
       </div>
 
@@ -319,7 +319,7 @@
         </li>
       </ul>
     </div>
-    <div class="verificador mt-5" id="VerificaUrl">
+    <div class="container mt-5" id="VerificaUrl">
       <div class="col-md">
         <h2>Verifique a sua URL</h2>
         <p>Insira a URL que você deseja verificar sua confiança abaixo:</p>
