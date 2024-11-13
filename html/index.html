@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/APIs.js" defer></script>
     <script src="../js/menu.js" defer></script>
+    <script src="../js/card.js"></script>
   </head>
   <body>
     <header>
@@ -183,65 +184,102 @@
             incluem:
           </p>
 
-          <h3>Phishing de e-mail em massa</h3>
-          <p>
-            No phishing de e-mails em massa, golpistas enviam spam para muitas
-            pessoas, tentando atrair algumas vítimas. Eles disfarçam os e-mails
-            como se fossem de marcas conhecidas, aumentando a chance de enganar
-            quem é cliente dessas empresas. Para tornar os e-mails mais
-            convincentes, usam logotipos, falsificam endereços de e-mail e
-            copiam mensagens reais. Os e-mails geralmente apelam para emoções ou
-            urgência, com assuntos como “Problema com seu pedido”. As mensagens
-            pedem ações que levam à exposição de dados ou download de malware.
-            Algumas campanhas de phishing coincidem com eventos populares, como
-            o Prime Day, aproveitando a baixa cautela dos usuários.
-          </p>
-
-          <h3>Spear phishing</h3>
-          <p>
-            Spear phishing é um ataque de phishing altamente direcionado, focado
-            em uma pessoa com acesso a informações confidenciais, como um
-            gerente financeiro. O golpista pesquisa detalhadamente seu alvo,
-            coletando dados em redes sociais e sites profissionais para se
-            passar por alguém de confiança, como um colega ou chefe, tornando a
-            mensagem mais convincente. Quando o alvo é um executivo de alto
-            nível ou uma pessoa de alto valor, o ataque é conhecido como
-            "whaling".
-          </p>
-
-          <h3>Outras técnicas de Phishing</h3>
-
-          <h4>Smishing</h4>
-          <p>
-            O phishing por SMS, ou smishing, usa mensagens de texto falsas para
-            enganar os alvos. Os golpistas geralmente se passam pelo provedor de
-            telefonia móvel da vítima, enviando um texto que oferece um
-            "presente gratuito" ou pede que o usuário atualize suas informações
-            de cartão de crédito.
-          </p>
-
-          <h4>Vishing</h4>
-          <p>
-            O vishing, ou phishing por voz, é um golpe realizado por chamadas
-            telefônicas, que cresceu 260% entre 2022 e 2023 devido ao uso de
-            tecnologia VoIP, permitindo milhões de chamadas automatizadas por
-            dia. Os golpistas falsificam o identificador de chamadas para
-            parecerem legítimos e assustam as vítimas com avisos falsos sobre
-            problemas financeiros ou legais, levando-as a fornecer dados
-            confidenciais ou dinheiro para "solucionar" os problemas.
-          </p>
-
-          <h4>Phishing nas redes sociais</h4>
-          <p>
-            O phishing nas redes sociais utiliza mensagens diretas de
-            plataformas como Facebook Messenger, LinkedIn e X (antigo Twitter)
-            para enganar usuários. Golpistas fingem precisar de ajuda para fazer
-            login ou vencer um concurso, visando roubar credenciais de login e
-            assumir o controle das contas. Essa prática é especialmente
-            prejudicial para quem reutiliza senhas em várias contas.
-          </p>
+          <div class="card">
+            <p class="card-text"></p>
+            <h3>Phishing de e-mail em massa</h3>
+            <p class="card-text">
+                No phishing de e-mails em massa, golpistas enviam spam para muitas pessoas,
+                tentando atrair algumas vítimas.
+                <span class="more-text">
+                    Eles disfarçam os e-mails como se fossem de marcas conhecidas,
+                    aumentando a chance de enganar quem é cliente dessas empresas.
+                    Para tornar os e-mails mais convincentes, usam logotipos, falsificam endereços de e-mail e
+                    copiam mensagens reais. Os e-mails geralmente apelam para emoções ou urgência, com assuntos
+                    como “Problema com seu pedido”. As mensagens pedem ações que levam à exposição de dados ou
+                    download de malware. Algumas campanhas de phishing coincidem com eventos populares, como o
+                    Prime Day, aproveitando a baixa cautela dos usuários.
+                </span>
+            </p>
+            <button onclick="toggleText(this)" class="toggleButton">
+                Mostrar mais
+            </button>
         </div>
-      </div>
+    
+        <div class="card">
+            <p class="card-text"></p>
+            <h3>Spear phishing</h3>
+            <p class="card-text">
+                Spear phishing é um ataque de phishing altamente direcionado,
+                focado em uma pessoa com acesso a informações confidenciais.
+                <span class="more-text">
+                    O golpista pesquisa detalhadamente seu alvo, coletando dados em redes sociais e sites profissionais
+                    para se passar por alguém de confiança, como um colega ou chefe,
+                    tornando a mensagem mais convincente. Quando o alvo é um executivo de alto nível ou uma pessoa de alto
+                    valor, o ataque é conhecido como "whaling".
+                </span>
+            </p>
+            <button onclick="toggleText(this)" class="toggleButton">
+                Mostrar mais
+            </button>
+        </div>
+    
+        <div class="card">
+            <p class="card-text"></p>
+            <h3>Smishing</h3>
+            <p class="card-text">
+                O phishing por SMS, ou smishing, usa mensagens de texto falsas
+                para enganar os alvos.
+                <span class="more-text">
+                    Os golpistas geralmente se passam pelo provedor de telefonia
+                    móvel da vítima, enviando um texto que oferece um "presente
+                    gratuito" ou pede que o usuário atualize suas informações de
+                    cartão de crédito.
+                </span>
+            </p>
+            <button onclick="toggleText(this)" class="toggleButton">
+                Mostrar mais
+            </button>
+        </div>
+    
+        <div class="card">
+            <p class="card-text"></p>
+            <h3>Vishing</h3>
+            <p class="card-text">
+                O vishing, ou phishing por voz, é um golpe realizado por chamadas
+                telefônicas, que cresceu 260% entre 2022 e 2023 devido
+                <span class="more-text">
+                    ao uso de tecnologia VoIP, permitindo milhões de chamadas
+                    automatizadas por dia. Os golpistas falsificam o identificador
+                    de chamadas para parecerem legítimos e assustam as vítimas com
+                    avisos falsos sobre problemas financeiros ou legais, levando-as
+                    a fornecer dados confidenciais ou dinheiro para "solucionar" os
+                    problemas.
+                </span>
+            </p>
+            <button onclick="toggleText(this)" class="toggleButton">
+                Mostrar mais
+            </button>
+        </div>
+    
+        <div class="card">
+            <p class="card-text"></p>
+            <h3>Phishing nas redes sociais</h3>
+            <p class="card-text">
+                O phishing nas redes sociais utiliza mensagens diretas de
+                plataformas como Facebook Messenger, LinkedIn e X (antigo Twitter)
+                para enganar usuários.
+                <span class="more-text">
+                    Golpistas fingem precisar de ajuda para fazer login ou vencer um
+                    concurso, visando roubar credenciais de login e assumir o
+                    controle das contas. Essa prática é especialmente prejudicial
+                    para quem reutiliza senhas em várias contas.
+                </span>
+            </p>
+            <button onclick="toggleText(this)" class="toggleButton">
+                Mostrar mais
+            </button>
+        </div>
+    
     </section>
     <!--
   <div class="container">
