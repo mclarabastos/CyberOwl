@@ -15,8 +15,8 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  background: linear-gradient(black, #040819);
-  color: #d1d6e4;
+  background: linear-gradient(black, #010414);
+  color: #ffffff;
   line-height: 1.7;
 }
 
@@ -142,7 +142,6 @@ h1:not(.lg) {
 
 .video-container {
   text-align: center;
-  background-color: #04101a;
   padding: 50px;
   color: #fff;
 }
@@ -160,18 +159,38 @@ h2 {
 }
 
 .definicaoPhishing {
-  h2, h5 {
-    text-align: left;
-    max-width: 50%;
+  border: 2px solid #00ffff;
+  border-radius: 50px;
+  padding: 30px;
+  margin: 15px;
+  color: #ffffff;
 
+  h2{
+    text-align: center;
+    color: #ffffff;
   }
 
   p {
     display: flex;
-    justify-content: space-between;
-    text-align: left;
-    max-width: 70%;
+    justify-content: end;
+    text-align: center, justify;
   }
+}
+
+.ameaca{
+  margin: 150px auto;
+  white-space: 70%;
+}
+
+#imgCard{
+  max-width: 500px;
+  float: left;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.amTxt h2{
+  font-size: 42px;
 }
 
 #imgAnzol {
@@ -190,9 +209,6 @@ h2 {
   background-color: transparent;
   align-items: center;
 }
-
-
-
 
 .more-text {
   display: none;
