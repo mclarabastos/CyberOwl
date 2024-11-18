@@ -65,15 +65,22 @@ h1:not(.lg) {
   margin-bottom: 20px;
 }
 
+#img img {
+  /* ; width: 75%; */
+  margin-top: 20px;
+}
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width:
+
+  /*730*/
+  1080px) {
   #Introdução .container {
     flex-direction: column;
     text-align: center;
   }
 
   #img img {
-    width: 75%;
+    /* width: 75%; */
     margin-top: 20px;
   }
 }
@@ -101,7 +108,10 @@ h1:not(.lg) {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width:
+
+  /*730*/
+  1080px) {
   .columns {
     flex-direction: column;
     align-items: center;
@@ -164,7 +174,7 @@ h2 {
   margin: 15px;
   color: #ffffff;
 
-  h2{
+  h2 {
     text-align: center;
     color: #ffffff;
   }
@@ -176,19 +186,19 @@ h2 {
   }
 }
 
-.ameaca{
+.ameaca {
   margin: 150px auto;
   white-space: 70%;
 }
 
-#imgCard{
+#imgCard {
   max-width: 500px;
   float: left;
   border-radius: 10px;
   margin-right: 15px;
 }
 
-.amTxt h2{
+.amTxt h2 {
   font-size: 42px;
 }
 
@@ -237,4 +247,16 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 0;
+}
+
+.fileira_card {
+  display: flex;
+  /* margin-left: 100px; */
+}
+
+@media screen and (max-width: 1080px) {
+  .fileira_card{
+    display: block;
+    /* margin-left: 100px; */
+  }
 }

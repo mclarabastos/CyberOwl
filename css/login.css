@@ -46,7 +46,7 @@
 
 .text p {
     color: #fff;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 i {
@@ -95,25 +95,25 @@ i {
     outline: none;
     margin-bottom: 20px;
     color: #40414a;
-    padding: 10px 0; 
+    padding: 10px 0;
 }
 
 
 .input-field label {
-    position: absolute;
+    /* position: absolute; */
     top: 15px;
     left: 10px;
     pointer-events: none;
     transition: 0.5s;
-    color: #999; 
+    color: #000000;
 }
 
 
-.input-field input:focus + label,
-.input-field input:not(:placeholder-shown) + label {
-    top: -10px; 
-    font-size: 15px; 
-    color: #5d5076; 
+.input-field input:focus+label,
+.input-field input:not(:placeholder-shown)+label {
+    top: -10px;
+    font-size: 15px;
+    color: #5d5076;
 }
 
 .input-field .input:focus,
@@ -182,7 +182,7 @@ span a:hover {
     }
 }
 
-.esqueceuSenha{
+.esqueceuSenha {
     text-align: center;
     font-size: small;
     margin: 0px;
