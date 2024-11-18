@@ -1,0 +1,10 @@
+footer {
+    background-color: rgb(0, 0, 0);
+    height: 250px;
+    display: flex;
+
+}
+
+#Contatos {
+    margin-top: 50px !important;
+}
