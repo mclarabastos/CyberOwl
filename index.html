@@ -72,21 +72,6 @@
       </div>
     </section>
 
-    <!--
-    <section id="Conheça-nos" class="container mt-5">
-      <h2>Conheça-nos</h2>
-      <p>
-        Bem-vindo ao CyberOwl! Aqui, oferecemos as ferramentas e informações
-        necessárias para proteger suas informações pessoais contra phishing e
-        outras ameaças cibernéticas. Navegue pelo nosso site para descobrir como
-        identificar e evitar fraudes online, verificar links suspeitos e
-        manter-se atualizado com as últimas notícias sobre segurança. Nossa
-        missão é garantir que você esteja sempre um passo à frente das ameaças
-        digitais.
-      </p> 
-    </section>
-    -->
-
     <section id="Phishing" class="container mt-5">
       <div class="definicaoPhishing">
         <h2>O que é Phishing?</h2>
@@ -240,7 +225,82 @@
         </div>
       </div>
     </section>
+    <div class="video-container">
+      <h2>
+        Phishing, Vishing e Smishing: Aprenda a Proteger-se de Golpes Digitais!
+      </h2>
+      <iframe
+        src="https://www.youtube.com/embed/5nkWQZvomVA?autoplay=1&mute=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
 
+    <div class="container" id="sinaisPhishing">
+      <h2>Quais são os sinais de um ataque de phishing?</h2>
+      <h5>
+        Os detalhes podem variar de golpe a golpe, mas há alguns sinais comuns
+        que indicam que uma mensagem pode ser uma tentativa de phishing. Esses
+        sinais incluem:
+      </h5>
+      <ul>
+        <li>
+          <strong>Emoções fortes e táticas de pressão:</strong>
+          Os golpes de phishing tentam fazer com que as vítimas sintam um senso
+          de urgência para que elas ajam rapidamente sem pensar. Os golpistas
+          costumam fazer isso invocando emoções fortes, como medo, ganância e
+          curiosidade. Podem impor prazos e ameaçar consequências irrealistas,
+          como a prisão.
+        </li>
+        <li>
+          <strong
+            >Solicitações de dinheiro ou informações confidenciais:</strong
+          >
+          Os golpes de phishing normalmente pedem uma de duas coisas: dinheiro
+          ou dados. Solicitações não solicitadas ou inesperadas de pagamento ou
+          informações pessoais podem ser sinais de ataques de phishing.
+        </li>
+        <li>
+          <strong>URLs e endereços de e-mail falsos:</strong>
+          Os golpistas geralmente usam URLs e endereços de e-mail que parecem
+          legítimos à primeira vista. Por exemplo, um e-mail de
+          "admin@rnicrosoft.com" pode parecer seguro, mas é preciso verificar
+          novamente. O "m" em "Microsoft" é na verdade um "r" e um "n." Outra
+          tática comum é usar um URL como "bankingapp.scamsite.com". Um usuário
+          pode pensar que isso se vincula a bankingapp.com, mas na verdade
+          aponta para um subdomínio de scamsite.com. Os hackers também podem
+          usar serviços de encurtamento de links para disfarçar URLs maliciosos.
+        </li>
+        <li>
+          <strong>Erros de ortografia e gramática:</strong>
+          Muitas gangues de phishing operam internacionalmente, o que significa
+          que muitas vezes escrevem mensagens de phishing em idiomas que não
+          falam fluentemente. Portanto, muitas tentativas de phishing contêm
+          erros gramaticais e inconsistências.
+        </li>
+      </ul>
+    </div>
+    <div class="container mt-5" id="VerificaUrl">
+      <div class="col-md">
+        <h2>Verifique a sua URL</h2>
+        <p>Insira a URL que você deseja verificar sua confiança abaixo:</p>
+        <input
+          type="text"
+          class="form-control"
+          id="url"
+          placeholder="Digite a URL aqui"
+          aria-label="Digite a URL"
+        />
+        <button class="btn btn-primary" onclick="verificar();">
+          Verificar
+        </button>
+        <p id="res"></p>
+      </div>
+    </div>
     <section id="Vitimas" class="container mt-5">
       <h2 id="Boletim">O que fazer em caso de ser uma vítima</h2>
       <p>
