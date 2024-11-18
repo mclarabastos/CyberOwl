@@ -1,25 +1,27 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
     box-sizing: border-box;
-    background-color: black;
+    /* background-color: black; */
 }
 
-.about{
+.about {
     width: 100%;
     padding: 78px 0px;
     background-color: black;
 }
 
-.about img{
+.about img {
     height: auto;
     width: 320px;
 }
-.about-text{
+
+.about-text {
     width: 950px;
 }
-.main{
+
+.main {
     width: 1130px;
     max-width: 95%;
     margin: 0 auto;
@@ -27,26 +29,30 @@
     align-items: center;
     justify-content: space-around;
 }
-.about-text h1{
+
+.about-text h1 {
     color: white;
     font-size: 80px;
     margin-bottom: 20px;
 }
-.about-text h5{
+
+.about-text h5 {
     color: white;
     font-size: 25px;
     text-transform: capitalize;
     margin-bottom: 25px;
     letter-spacing: 2px;
 }
-.about-text p{
+
+.about-text p {
     color: white;
     letter-spacing: 3px;
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
 }
-button{
+
+#Fala_conosco {
     background-color: rgb(49, 183, 183);
     color: white;
     text-decoration: none;
@@ -54,15 +60,11 @@ button{
     font-weight: bold;
     padding: 13px 30px;
     border-radius: 90px;
-    transition: .4s; 
+    transition: .4s;
 }
-button:hover{
+
+#Fala_conosco:hover {
     background: transparent;
     border: 2px solid;
     cursor: pointer;
-}
-
-footer{
-    background-color: black;
-    color: white;
 }

@@ -13,11 +13,13 @@
     color: black !important;
 
     h1, p, h2, h3, h5 {
-        color: black
+        color: black;
     }
 
     header {
-        background-color: white;
+        h1{
+        color: white !important;
+        }
         background-color: black;
     }
 
@@ -35,4 +37,10 @@
         border: 2px solid #000000;
     }
 
+    #Contatos {
+        background: black !important;
+        p{
+            color: white !important;
+        }
+    }
 }
