@@ -58,6 +58,7 @@
               <header>Login</header>
               <form onsubmit="ValidarLogin(event)">
                 <div class="input-field">
+                  <label for="email">Email</label>
                   <input
                     type="email"
                     class="input"
@@ -66,11 +67,12 @@
                     autocomplete="off"
                     pattern=".+@.+\..+"
                   />
-                  <label for="email">Email</label>
+                  
                   <div id="email-incorreto" class="text-danger"></div>
                 </div>
 
                 <div class="input-field">
+                  <label for="pass">Senha</label>
                   <input
                     type="password"
                     class="input"
@@ -78,7 +80,7 @@
                     required
                     pattern="(?=.*[A-Z])(?=.*[\W_]).{8,}"
                   />
-                  <label for="pass">Senha</label>
+                  
                   <div id="senha-incorreta" class="text-danger"></div>
                 </div>
 

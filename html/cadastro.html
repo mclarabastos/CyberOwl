@@ -49,6 +49,7 @@
               <header>Crie Sua Conta</header>
               <form onsubmit="ValidarCadastro(event)">
                 <div class="input-field">
+                  <label for="name">Nome Completo</label>
                   <input
                     type="text"
                     class="input"
@@ -56,9 +57,10 @@
                     required
                     autocomplete="off"
                   />
-                  <label for="name">Nome Completo</label>
+                  
                 </div>
                 <div class="input-field">
+                  <label for="email">Email</label>
                   <input
                     type="email"
                     class="input"
@@ -66,13 +68,13 @@
                     required
                     autocomplete="off"
                     pattern=".+@.+\..+"
-                  />
-                  <label for="email">Email</label>
+                  />                  
                   <div id="email-incorreta" style="color: red"></div>
                 </div>
                 <div class="input-field">
-                  <input type="password" class="input" id="senha" required />
                   <label for="senha">Senha</label>
+                  <input type="password" class="input" id="senha" required />
+                  
                   <div id="senha-incorreta" style="color: red"></div>
                 </div>
                 <div class="input-field">
