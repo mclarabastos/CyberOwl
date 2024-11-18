@@ -251,12 +251,10 @@ h2 {
 
 .fileira_card {
   display: flex;
-  /* margin-left: 100px; */
 }
 
 @media screen and (max-width: 1080px) {
   .fileira_card{
     display: block;
-    /* margin-left: 100px; */
   }
 }

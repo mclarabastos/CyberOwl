@@ -18,7 +18,7 @@ function acesse() {
 
         document.body.classList.remove("claro")
         cn.style.backgroundColor = "white"
-        ace.src = "img/brilho-do-sol.png"  
+        ace.src = "/img/brilho-do-sol.png"  
     }else{
         divsArray.forEach(div => {
             div.classList.add("claro")    
@@ -29,7 +29,7 @@ function acesse() {
         })
 
         document.body.classList.add("claro")
-        cn.style.backgroundColor = "transparent"
-        ace.src = "img/lua-crescente.png"        
+        cn.style.backgroundColor = "white"
+        ace.src = "/img/lua-crescente.png"        
     }
 }

@@ -57,10 +57,12 @@ function ValidarLogin(event) {
         document.getElementById('senha-incorreta').textContent = '';
     }
 
+    // Verifica se o email e a senha digitada existe
     const Usuarios = JSON.parse(localStorage.getItem('Usuarios'));
     const UsuarioV = Usuarios.find(usuario =>
         usuario.email === email_input && usuario.senha === senha_input
     );
+    
     if (validar) {
         if (!!UsuarioV){
             alert('Login realizado com sucesso!');
