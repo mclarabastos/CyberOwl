@@ -1,5 +1,5 @@
 footer {
-    position: fixed;
+    
 }
 
 main {
@@ -16,12 +16,16 @@ body {
     padding: 0;
 }
 
-#footer_content h3 {
+#footer-lits{
+    line-height: 1px;
+}
+#footer_content p {
     margin-top: 25px;
+    line-height: 2px;
 }
 
-#VerificaUrl h2 {
-    margin-top: 100px;
+#VerificaUrl h1 {
+    margin-top: 200px;
 }
 
 @media screen and (max-width:1080px) {
