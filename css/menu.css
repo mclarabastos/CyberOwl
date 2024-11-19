@@ -15,11 +15,11 @@
 }
 
 .logo {
-    margin-left: 10px !important ;
+    margin-left: 10px !important;
 }
 
 .nav-list {
-    display: flex !important ;
+    display: flex !important;
 }
 
 .nav-link {
@@ -50,13 +50,10 @@
 }
 
 @media screen and (max-width : 1080px) {
-    body {
-        background-color: black !important;
-    }
-
     .nav-list {
         display: block !important;
         margin-left: 0 !important;
+        background-color: black;
     }
 
     .esconder {
@@ -81,4 +78,5 @@
         margin-top: 15px !important;
         display: block !important;
     }
+
 }

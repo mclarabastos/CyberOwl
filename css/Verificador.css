@@ -1,0 +1,35 @@
+footer {
+    position: fixed;
+}
+
+main {
+    height: 250px;
+}
+
+body {
+    height: 500px;
+}
+
+#footer_content {
+    /* background: red; */
+    margin: 0;
+    padding: 0;
+}
+
+#footer_content h3 {
+    margin-top: 25px;
+}
+
+#VerificaUrl h2 {
+    margin-top: 100px;
+}
+
+@media screen and (max-width:1080px) {
+    footer {
+        position: relative;
+    }
+}
+
+.btn {
+    margin-top: 25px;
+}

@@ -17,9 +17,10 @@
     }
 
     header {
-        h1{
-        color: white !important;
+        h1 {
+            color: white !important;
         }
+
         background-color: black;
     }
 
@@ -39,8 +40,18 @@
 
     #Contatos {
         background: black !important;
-        p{
+
+        p {
             color: white !important;
         }
+    }
+
+    .footer-list p, .footer-list a, .footer-list h3, #footer_copyright {
+        color: white !important;
+    }
+
+    #footer_content, #footer_copyright {
+        background-color: black !important;
+
     }
 }

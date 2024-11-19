@@ -19,6 +19,7 @@
 footer {
     width: 100%;
     color: var(--color-neutral-40);
+    bottom: 0;
 }
 
 .footer-link {
