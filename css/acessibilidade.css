@@ -46,7 +46,7 @@
         }
     }
 
-    .footer-list p, .footer-list a, .footer-list h3, #footer_copyright {
+    .footer-list span, .footer-list a, .footer-list h5, #footer_copyright {
         color: white !important;
     }
 

@@ -28,13 +28,19 @@ footer {
 
 #footer_content {
     background-color: var(--color-neutral-10);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
+    /* display: grid; */
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    justify-content: space-between;
+    /* padding: 3rem 3.5rem; */
 }
 
-#footer_contacts h1 {
-    margin-bottom: 0.75rem;
+.ul_desenvolvido {
+    margin-right: 25px;
+}
+
+.footer-list h5{
+margin-top: 15px;
 }
 
 .footer-link:hover {
@@ -78,14 +84,26 @@ footer {
 
 @media screen and (max-width: 768px) {
     #footer_content {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+        padding: 3rem 3.5rem;
+    }
+
+    .ul_desenvolvido {
+        margin-right: 0;
     }
 }
 
 @media screen and (max-width: 426px) {
     #footer_content {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
+
+    }
+
+    .ul_desenvolvido {
+        margin-right: 0;
     }
 }

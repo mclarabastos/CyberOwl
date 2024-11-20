@@ -15,7 +15,8 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  background: linear-gradient(black, #010414);
+  background-color: #040819;
+  /*linear-gradient(black, #010414);*/
   color: #ffffff;
   line-height: 1.7;
 }
@@ -254,7 +255,11 @@ h2 {
 }
 
 @media screen and (max-width: 1080px) {
-  .fileira_card{
+  .fileira_card {
     display: block;
+  }
+
+  * {
+    max-width: 100% !important;
   }
 }
