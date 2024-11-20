@@ -3,6 +3,7 @@ function ValidarCadastro(event) {
 
     let senha_input = document.getElementById('senha').value;
     let email_input = document.getElementById('email').value;
+    let nome_input = document.getElementById("name").value
 
     let validar = true;
 
@@ -34,13 +35,35 @@ function ValidarCadastro(event) {
             alert('Email já cadastrado. Tente outro.');
         } else {
             let novoUsuario = {
+                nome: nome_input,
                 email: email_input,
                 senha: senha_input
+                
             };
             usuarios.push(novoUsuario);
             localStorage.setItem('Usuarios', JSON.stringify(usuarios));
             alert('Cadastro Realizado com Sucesso!');
             window.location.href = '../html/login.html';
         }
+    }
+}
+
+const input_nome = document.getElementById("name");
+
+input_nome.addEventListener("keypress",function(e) {
+
+    if (!bloquearCarac(e)) {
+        e.preventDefault();
+    }
+    
+})
+
+function bloquearCarac(e) {
+    const Caracter = String.fromCharCode(e.keyCode)
+
+    const Padrao = '[a-zA-Z\\s]'
+
+    if (Caracter.match(Padrao)) {
+        return true;
     }
 }
