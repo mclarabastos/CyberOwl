@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - CyberOwl</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/redefiniSenha.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/rodape.css">
+    <!-- JS -->
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/redefineSenha.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav-bar">
+        <div class="logo_button">
+          <div class="logo">
+            <h1>CyberOwl</h1>
+          </div>
+          <div class="nav-btn">
+            <button onclick="EMmenu()"><img id="img" src="../img/menu_white_36dp.svg" alt=""></button>
+          </div>
+        </div>
+    
+    
+        <div class="nav-list esconder" id="menu">
+          <p class="nav-item p1"><a href="../index.html#Inicio" class="nav-link">Inicio</a></p>
+          <p class="nav-item p2"><a href="../index.html#Boletim" class="nav-link">Boletim</a></p>
+          <p class="nav-item p1"><a href="../index.html#Verificar-Url" class="nav-link">Verificador de URL</a></p>
+          <p class="nav-item p2"><a href="../index.html#Contatos" class="nav-link">Contatos</a></p>
+          <p class="nav-item p1"><a href="cadastro.html" class="nav-link">Cadastro</a></p>
+          <p class="nav-item p2"><a href="sobre.html" class="nav-link">Sobre Nós</a></p>
+        </div>
+    
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="wrapper">
+      <div class="principal">
+        <div class="row">
+          <div class="col-md-6 side-image">
+            <img src="#" alt="" class="img" />
+          </div>
+
+          <div class="col-md-6 right">
+            <div class="input-box">
+              <header>Redefinir Senha</header>
+              <form id="formRedefinirSenha">
+                <input
+                    type="email"
+                    id="email"
+                    class="input"
+                    placeholder="Seu Email"
+                    required
+                />
+                <input
+                    type="password"
+                    class="input"
+                    id="SenhaNova"
+                    required
+                    pattern="(?=.*[A-Z])(?=.*[\W_]).{8,}"
+                    placeholder="Nova Senha"
+                />
+                <input
+                    type="password"
+                    class="input"
+                    id="confirmSenha"
+                    required
+                    pattern="(?=.*[A-Z])(?=.*[\W_]).{8,}"
+                    placeholder="Confirmar Senha"
+                />
+                <div class="input-field">
+                    <input type="submit" class="submit" value="Confirmar">
+            </div>
+            </form>
+            <div id="mensagem"></div>
+        
+              <div class="signin">
+                <span
+                  >Ainda não possui uma conta?
+                  <a href="../html/cadastro.html">Registre-se.</a></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="footer_content">
+    
+        <ul class="footer-list">
+          <li>
+            <h3>Contato</h3>
+          </li>
+          <li>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=CyberOwl@gmail.com" target="_blank"
+              class="footer-link">CyberOwl@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://wa.me/5521965149947" target="_blank" class="footer-link">(21) 96514-9947</a>
+          </li>
+        </ul>
+    
+        <ul class="footer-list">
+          <li>
+            <h3>Conheça-nos</h3>
+          </li>
+          <li>
+            <a href="html/sobre.html" class="footer-link">Sobre Nós</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <h3>Desenvolvido por:</h3>
+          </li>
+          <li>
+            <p class="footer-D">Maria</p>
+          </li>
+          <li>
+            <p class="footer-D">Gustavo</p>
+          </li>
+          <li>
+            <p class="footer-D">Julio</p>
+          </li>
+        </ul>
+      </div>
+      <div id="footer_copyright">
+        &#169
+        2024 todos os direitos reservados
+      </div>
+    </footer>
+  </body>
+</html>
