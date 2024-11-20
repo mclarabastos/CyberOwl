@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - CyberOwl</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="../css/redefiniSenha.css" />
     <link rel="stylesheet" href="../css/menu.css" />
     <link
@@ -15,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/rodape.css">
-    <!-- JS -->
+
     <script src="../js/menu.js" defer></script>
     <script src="../js/redefineSenha.js" defer></script>
   </head>
@@ -44,8 +42,6 @@
     
       </nav>
     </header>
-
-    <!-- Main Content -->
     <div class="wrapper">
       <div class="principal">
         <div class="row">
@@ -62,35 +58,19 @@
                     id="email"
                     class="input"
                     placeholder="Seu Email"
-                    required
-                />
-                <input
-                    type="password"
-                    class="input"
-                    id="SenhaNova"
-                    required
-                    pattern="(?=.*[A-Z])(?=.*[\W_]).{8,}"
-                    placeholder="Nova Senha"
-                />
-                <input
-                    type="password"
-                    class="input"
-                    id="confirmSenha"
-                    required
-                    pattern="(?=.*[A-Z])(?=.*[\W_]).{8,}"
-                    placeholder="Confirmar Senha"
-                />
+                    required/>
+                <input type="password" class="input" id="SenhaNova" required pattern="(?=.*[A-Z])(?=.*[\W_]).{8,}" placeholder="Nova Senha"/>
+                <input type="password" class="input" id="confirmSenha" required pattern="(?=.*[A-Z])(?=.*[\W_]).{8,}" placeholder="Confirmar Senha"/>
                 <div class="input-field">
                     <input type="submit" class="submit" value="Confirmar">
-            </div>
+                </div>
             </form>
             <div id="mensagem"></div>
         
               <div class="signin">
                 <span
                   >Ainda não possui uma conta?
-                  <a href="../html/cadastro.html">Registre-se.</a></span
-                >
+                  <a href="../html/cadastro.html">Registre-se.</a></span>
               </div>
             </div>
           </div>
