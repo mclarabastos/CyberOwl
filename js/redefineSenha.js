@@ -4,11 +4,8 @@ function redefinirSenha(event) {
     const email_input = document.getElementById('email').value;
     const novaSenha = document.getElementById('SenhaNova').value;
     const confirmarSenha = document.getElementById('confirmSenha').value;
-
-    // Validação de senha
     let validaSenha = true;
 
-    // Valida se a nova senha e a confirmação são iguais
     if (novaSenha !== confirmarSenha) {
         document.getElementById('mensagem').textContent = 'As senhas não coincidem. Por favor, digite novamente.';
         validaSenha = false;
@@ -16,7 +13,6 @@ function redefinirSenha(event) {
         document.getElementById('mensagem').textContent = '';
     }
 
-    // Verifica se a nova senha segue o padrão
     let SenhaRegex = /^(?=.*[A-Z])(?=.*[\W_]).{8,}$/;
     if (!SenhaRegex.test(novaSenha)) {
         document.getElementById('mensagem').textContent = 'A senha deve ter no mínimo 8 caracteres, uma letra maiúscula e um símbolo.';
@@ -24,27 +20,20 @@ function redefinirSenha(event) {
     }
 
     if (validaSenha) {
-        // Recupera os usuários do localStorage
         const Usuarios = JSON.parse(localStorage.getItem('Usuarios')) || [];
-        
-        // Encontra o usuário com o email fornecido
         const usuario = Usuarios.find(usuario => usuario.email === email_input);
 
         if (usuario) {
-            // Se o usuário for encontrado, atualiza a senha
             usuario.senha = novaSenha;
-            
-            // Atualiza o localStorage com a nova senha
             localStorage.setItem('Usuarios', JSON.stringify(Usuarios));
             
             document.getElementById('mensagem').textContent = 'Senha alterada com sucesso!';
             alert('Senha alterada com sucesso!');
-            window.location.href = 'login.html'; // Redireciona para a tela de login
+            window.location.href = 'login.html'; 
         } else {
             document.getElementById('mensagem').textContent = 'Email não encontrado.';
         }
     }
 }
 
-// Associa a função ao formulário
 document.getElementById('formRedefinirSenha').addEventListener('submit', redefinirSenha);
