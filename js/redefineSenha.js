@@ -29,6 +29,8 @@ function redefinirSenha(event) {
             
             document.getElementById('mensagem').textContent = 'Senha alterada com sucesso!';
             alert('Senha alterada com sucesso!');
+            sessionStorage.setItem("UsuarioAtivo", "")
+            sessionStorage.setItem("LoginAtivo", false)
             window.location.href = 'login.html'; 
         } else {
             document.getElementById('mensagem').textContent = 'Email não encontrado.';
