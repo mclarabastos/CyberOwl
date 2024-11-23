@@ -6,7 +6,7 @@
 }
 
 .wrapper {
-    background: rgb(24, 24, 26);
+    background: black;
     padding: 0 20px 0 20px;
     margin-top: 50px;
 }
@@ -25,7 +25,9 @@
     background-repeat: no-repeat;
     border-radius: 10px 0 0 10px;
     position: relative;
+    background-color: #000;
 }
+
 
 .row {
     width: 900px;

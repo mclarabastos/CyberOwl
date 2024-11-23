@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/acessibilidade.css" />
     <link rel="stylesheet" href="css/rodape.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="js/menu.js" defer></script>
     <script src="js/card.js" defer></script>
     <script src="js/acessibilidade.js" defer></script>
@@ -78,12 +79,10 @@
       <div class="definicaoPhishing">
         <h2>O que é Phishing?</h2>
         <p>
-          <strong>
             Phishing é uma ameaça cibernética crescente que explora a confiança
             das pessoas para roubar dados sensíveis ou instalar malware. É
             fundamental entender como esses ataques funcionam para evitar cair
             em armadilhas online.
-          </strong>
         </p>
         <div class="pimg">
           <p>
@@ -141,6 +140,7 @@
               <div class="card">
                 <p class="card-text"></p>
                 <h3>Phishing de e-mail em massa</h3>
+                <h4><i class="fa-solid fa-envelope" style="color: rgb(100, 129, 129);"></i></h4>
                 <p class="card-text">
                   No phishing de e-mails em massa, golpistas enviam spam para
                   muitas pessoas, tentando atrair algumas vítimas.
@@ -167,6 +167,7 @@
               <div class="card">
                 <p class="card-text"></p>
                 <h3>Smishing</h3>
+                <h4><i class="fa-solid fa-comments-dollar" style="color: rgb(100, 129, 129);"></i></h4>
                 <p class="card-text">
                   O phishing por SMS, ou smishing, usa mensagens de texto falsas
                   para enganar os alvos.
@@ -188,6 +189,7 @@
               <div class="card">
                 <p class="card-text"></p>
                 <h3>Spear phishing</h3>
+                <h4><i class="fa-solid fa-user-tie" style="color: rgb(100, 129, 129);"></i></h4>
                 <p class="card-text">
                   Spear phishing é um ataque de phishing altamente direcionado,
                   focado em uma pessoa com acesso a informações confidenciais.
@@ -210,6 +212,7 @@
               <div class="card">
                 <p class="card-text"></p>
                 <h3>Vishing</h3>
+                <h4><i class="fa-solid fa-microphone" style="color: rgb(100, 129, 129);"></i></h4>
                 <p class="card-text">
                   O vishing, ou phishing por voz, é um golpe realizado por
                   chamadas telefônicas, que cresceu 260% entre 2022 e 2023
@@ -246,6 +249,7 @@
       >
       </iframe>
     </div>
+
     <section id="Vitimas" class="container mt-5">
       <h2 id="Boletim">O que fazer em caso de ser uma vítima</h2>
       <p>
@@ -253,61 +257,87 @@
         ataque, é importante agir rapidamente para minimizar os danos.
       </p>
       <ol>
-        <li>
-          <strong>Desconecte-se e verifique a segurança:</strong>
-          <p>
-            Desconecte-se imediatamente do site ou app e altere suas senhas,
-            priorizando contas importantes (e-mail, banco, redes sociais). Use
-            senhas fortes e ative a autenticação de dois fatores (2FA).
-          </p>
+        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px;">
+          <i class="fa-solid fa-rss" style="color: #00ffd5; font-size: 1.5rem;"></i>
+          <div>
+            <strong>Desconecte-se e verifique a segurança:</strong>
+            <p>
+              Desconecte-se imediatamente do site ou app e altere suas senhas,
+              priorizando contas importantes (e-mail, banco, redes sociais). Use
+              senhas fortes e ative a autenticação de dois fatores (2FA).
+            </p>
+          </div>
         </li>
-        <li>
-          <strong>Monitore suas contas:</strong>
-          <p>
-            Verifique suas contas bancárias para detectar atividades suspeitas e
-            comunique instituições financeiras sobre possíveis fraudes.
-          </p>
+        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px;">
+          <i class="fa-solid fa-circle-user" style="color: #00ffd5; font-size: 1.5rem;"></i>
+          <div>
+            <strong>Monitore suas contas:</strong>
+            <p>
+              Verifique suas contas bancárias para detectar atividades suspeitas e
+              comunique instituições financeiras sobre possíveis fraudes.
+            </p>
+          </div>
         </li>
-        <li>
-          <strong>Verifique seu dispositivo:</strong>
-          <p>
-            Faça uma verificação de malware com um software antivírus e mantenha
-            seu sistema e aplicativos atualizados.
-          </p>
+        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px;">
+          <i class="fa-solid fa-user-check" style="color: #00ffd5; font-size: 1.5rem;"></i>
+          <div>
+            <strong>Verifique seu dispositivo:</strong>
+            <p>
+              Faça uma verificação de malware com um software antivírus e mantenha
+              seu sistema e aplicativos atualizados.
+            </p>
+          </div>
         </li>
-        <li>
-          <strong>Monitore informações pessoais:</strong>
-          <p>
-            Verifique o uso indevido de seus dados pessoais. Use serviços de
-            proteção ao crédito, como Serasa ou SPC.
-          </p>
+        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px;">
+          <i class="fa-solid fa-user-shield" style="color: #00ffd5; font-size: 1.5rem;"></i>
+          <div>
+            <strong>Monitore informações pessoais:</strong>
+            <p>
+              Verifique o uso indevido de seus dados pessoais. Use serviços de
+              proteção ao crédito, como Serasa ou SPC.
+            </p>
+          </div>
         </li>
-        <li>
-          <strong>Denúncia ou incidente:</strong>
-          <p>
-            Embora o CyberOwl tenha a intenção de promover a prevenção e
-            mitigação, isso não substitui a necessidade de buscar as
-            autoridades. Registrar um boletim de ocorrência é fundamental em
-            tais situações. Para fazer isso, acesse
-            <a href="#" target="_blank">este link</a>.
-          </p>
+        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px;">
+          <i class="fa-solid fa-circle-check" style="color: #00ffd5; font-size: 1.5rem;"></i>
+          <div>
+            <strong>Verifique a URL:</strong>
+            <p>
+              O Verificador de Links é uma ferramenta de verificação de URL projetada para ajudar você a evitar malwares, ataques de phishing, botnets e sites falsos.
+              Para verificar, acesse <a href="../html/Verificador.html">este link</a>.
+            </p>
+          </div>
+        </li>
+        <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px;">
+          <i class="fa-solid fa-shield" style="color: #00ffd5; font-size: 1.5rem;"></i>
+          <div>
+            <strong>Denúncia ou incidente:</strong>
+            <p>
+              Embora o CyberOwl tenha a intenção de promover a prevenção e
+              mitigação, isso não substitui a necessidade de buscar as
+              autoridades. Registrar um boletim de ocorrência é fundamental em
+              tais situações. Para fazer isso, acesse
+              <a href="#" target="_blank">este link</a>.
+            </p>
+          </div>
         </li>
       </ol>
     </section>
+
     <section id="Noticias" class="container mt-5">
-      <h2>Dê o proximo passo</h2>
+      <h2 class="msg">Receba Notícias e Proteja-se!</h2>
       <h5>
-        Cadastre-se no nosso site e receba as ultimas noticias de PHISHING no
-        seu Email.
+        Cadastre-se e receba as últimas notícias de phishing direto no seu e-mail.
       </h5>
       <p>
-        Mantenha-se informado para estar sempre preparado e protegido contra
-        fraudes online com CyberOwl. Volte frequentemente para atualizações e
-        dicas essenciais sobre como manter suas informações seguras. Faça o seu
-        cadastro <a href="html/cadastro.html" target="_blank">aqui</a>.
+        Mantenha-se informado com o CyberOwl! Fique preparado contra fraudes online com nossas atualizações frequentes e dicas essenciais. 
+        Faça seu cadastro agora e tenha acesso exclusivo a informações de segurança:
       </p>
+      <a href="/html/cadastro.html">
+      <button id="botaoNoticia">Cadastrar-se</button>
+    </a>
     </section>
-
+    
     <footer>
       <div id="footer_content">
   

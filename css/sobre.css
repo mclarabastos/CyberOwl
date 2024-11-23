@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
     /* background-color: black; */
 }
@@ -50,21 +50,4 @@
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
-}
-
-#Fala_conosco {
-    background-color: rgb(49, 183, 183);
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 90px;
-    transition: .4s;
-}
-
-#Fala_conosco:hover {
-    background: transparent;
-    border: 2px solid;
-    cursor: pointer;
 }

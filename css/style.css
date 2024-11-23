@@ -15,7 +15,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  background: linear-gradient(black, #010414);
+  background: black;
   color: #ffffff;
   line-height: 1.7;
 }
@@ -151,15 +151,16 @@ h1:not(.lg) {
 
 .video-container {
   text-align: center;
-  padding: 50px;
+  padding: 60px;
   color: #fff;
 }
 
 .video-container iframe {
   width: 100%;
-  max-width: 560px;
-  height: 315px;
+  max-width: 760px;
+  height: 415px;
   border: none;
+  align-items: center;
 }
 
 h2 {
@@ -173,17 +174,30 @@ h2 {
   padding: 30px;
   margin: 15px;
   color: #ffffff;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.5s ease; 
+  letter-spacing: 3px;
+
 
   h2 {
     text-align: center;
     color: #ffffff;
+
   }
 
   p {
     display: flex;
     justify-content: end;
     text-align: center, justify;
+    letter-spacing: 2px;
   }
+}
+
+.definicaoPhishing:hover {
+  transform: translateY(0); /* Anima a posição ao passar o mouse */
+  box-shadow: 0 15px 30px rgba(0, 255, 255, 0.4); /* Altera a sombra */
+  border-color: #ff00e1; /* Muda a cor da borda */
 }
 
 .ameaca {
@@ -256,5 +270,106 @@ h2 {
 @media screen and (max-width: 1080px) {
   .fileira_card{
     display: block;
+  }
+}
+
+#Noticias{
+  margin-top: 70px;
+  padding: 90px;
+}
+
+#Noticias p{
+  font-size: 20px;
+}
+.msg{
+  color: white;
+  font-size: 45px;
+  border-right: 10px solid rgb(17, 206, 206);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 25ch;
+  animation: mark .5s step-end infinite, write 6s steps(22, end) infinite;
+}
+
+@keyframes mark{
+
+  50%{
+    border-right-color: transparent;
+  }
+}
+
+@keyframes write {
+    20%{
+      width: 26.5ch;
+    }
+
+    70%{
+      width: 26.5ch;
+    }
+
+    85%{
+      width: 0;
+    }
+
+    100%{
+      width: 26.5ch;
+    }
+}
+
+#botaoNoticia{
+  background-color: aqua;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 90px;
+  transition: .4s;
+  align-items: center;
+}
+
+#botaoNoticia:hover{
+  background: transparent;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #Noticias {
+    padding: 3%; 
+  }
+
+  #Noticias p {
+    font-size: 1rem; 
+  }
+
+  .msg {
+    font-size: 2rem;
+    width: 20ch; 
+  }
+
+  #botaoNoticia {
+    font-size: 1rem; 
+    padding: 1rem 2rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  #Noticias {
+    padding: 2%; 
+  }
+
+  #Noticias p {
+    font-size: 0.875rem; 
+  }
+
+  .msg {
+    font-size: 1.5rem; 
+    width: 18ch; 
+  }
+
+  #botaoNoticia {
+    font-size: 0.875rem; 
+    padding: 0.8rem 1.5rem;
   }
 }
