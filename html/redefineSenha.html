@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - CyberOwl</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/redefiniSenha.css" />
     <link rel="stylesheet" href="../css/menu.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -15,9 +13,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/rodape.css">
-    <!-- JS -->
+
     <script src="../js/menu.js" defer></script>
-    <script src="../js/login.js" defer></script>
+    <script src="../js/redefineSenha.js" defer></script>
+    <script src="/js/conf.js"></script>
   </head>
 
   <body>
@@ -38,14 +37,12 @@
           <p class="nav-item p2"><a href="../index.html#Boletim" class="nav-link">Boletim</a></p>
           <p class="nav-item p1"><a href="Verificador.html" class="nav-link">Verificador de URL</a></p>
           <p class="nav-item p2"><a href="../index.html#Contatos" class="nav-link">Contatos</a></p>
-          <p class="nav-item p1"><a href="cadastro.html" class="nav-link">Cadastro</a></p>
+          <p class="nav-item p1"><a href="cadastro.html" class="nav-link" id="Login_Conf">Cadastro</a></p>
           <p class="nav-item p2"><a href="sobre.html" class="nav-link">Sobre Nós</a></p>
         </div>
     
       </nav>
     </header>
-
-    <!-- Main Content -->
     <div class="wrapper">
       <div class="principal">
         <div class="row">
@@ -55,49 +52,21 @@
 
           <div class="col-md-6 right">
             <div class="input-box">
-              <header>Login</header>
-              <form onsubmit="ValidarLogin(event)">
+              <header>Redefinir Senha</header>
+              <form id="formRedefinirSenha">
+                <input type="email" id="email" class="input" placeholder="Seu Email" required/>
+                <input type="password" class="input" id="SenhaNova" required pattern="(?=.*[A-Z])(?=.*[\W_]).{8,}" placeholder="Nova Senha"/>
+                <input type="password" class="input" id="confirmSenha" required pattern="(?=.*[A-Z])(?=.*[\W_]).{8,}" placeholder="Confirmar Senha"/>
                 <div class="input-field">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    class="input"
-                    id="email"
-                    required
-                    autocomplete="off"
-                    pattern=".+@.+\..+"
-                  />
-                  
-                  <div id="email-incorreto" class="text-danger"></div>
+                    <input type="submit" class="submit" value="Confirmar">
                 </div>
-
-                <div class="input-field">
-                  <label for="pass">Senha</label>
-                  <input
-                    type="password"
-                    class="input"
-                    id="pass"
-                    required
-                    pattern="(?=.*[A-Z])(?=.*[\W_]).{8,}"
-                  />
-                  
-                  <div id="senha-incorreta" class="text-danger"></div>
-                </div>
-
-                <div class="esqueceuSenha">
-                  <span> <a href="/html/redefineSenha.html">Esqueceu a senha?</a></span>
-                </div>
-
-                <div class="input-field">
-                  <input type="submit" class="submit" value="Entrar" />
-                </div>
-              </form>
-
+            </form>
+            <div id="mensagem"></div>
+        
               <div class="signin">
                 <span
                   >Ainda não possui uma conta?
-                  <a href="../html/cadastro.html">Registre-se.</a></span
-                >
+                  <a href="../html/cadastro.html">Registre-se.</a></span>
               </div>
             </div>
           </div>

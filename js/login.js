@@ -57,20 +57,36 @@ function ValidarLogin(event) {
         document.getElementById('senha-incorreta').textContent = '';
     }
 
-    // Verifica se o email e a senha digitada existe
-    const Usuarios = JSON.parse(localStorage.getItem('Usuarios'));
-    const UsuarioV = Usuarios.find(usuario =>
-        usuario.email === email_input && usuario.senha === senha_input
-    );
-    
     if (validar) {
+        // Verifica se o email e a senha digitada existe
+        const Usuarios = JSON.parse(localStorage.getItem('Usuarios'));
+        const UsuarioV = Usuarios.find(usuario =>
+            usuario.email === email_input && usuario.senha === senha_input
+        );
+        var nomeusuarioativo = ""
+
+        for (let i = 0; i < Usuarios.length; i++) {
+            if (Usuarios[i].email === email_input) {
+                nomeusuarioativo = Usuarios[i].nome;
+                break; // Interrompe o loop
+            }
+        }
+        
         if (!!UsuarioV){
+
             alert('Login realizado com sucesso!');
             
             // vai armazenar o email e senha nos cookies para o preenchimento automático
             definirCookie("email", email_input, 7);
             definirCookie("senha", senha_input, 7);
-
+            sessionStorage.setItem("LoginAtivo",true)
+            var UsuarioAtivo = {
+                email : email_input,
+                nome : nomeusuarioativo
+            }
+            var usuarioA = []
+            usuarioA.push(UsuarioAtivo)
+            sessionStorage.setItem("UsuarioAtivo", JSON.stringify(usuarioA))
             window.location.href = '../index.html';
         } else {
             alert('Email ou senha incorretos.');
@@ -84,3 +100,4 @@ function sair() {
     alert("Você saiu com sucesso.");
     window.location.href = '../html/login.html';
 }
+

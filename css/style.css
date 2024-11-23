@@ -9,7 +9,7 @@
 
 html {
   scroll-behavior: smooth;
-  color: black;
+  /* color: black; */
 }
 
 body {
@@ -268,7 +268,7 @@ h2 {
 }
 
 @media screen and (max-width: 1080px) {
-  .fileira_card{
+  .fileira_card {
     display: block;
   }
 }
