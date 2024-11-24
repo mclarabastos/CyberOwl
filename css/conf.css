@@ -12,21 +12,25 @@ footer {
 }
 
 body {
-    background-color: #040819;
+    background-color: #000000;
     color: white;
 }
 
 .definicaoPhishing {
+    width: 800px;
+    margin: 50px;
     border: 2px solid #00ffff;
     border-radius: 50px;
     padding: 30px;
-    /* margin: 15px; */
-    margin-top: 100px;
+    margin-top: 150px;
     color: #ffffff;
+    transform: translateY(-5px);
+    transition: all 0.5s ease; 
 
-    h2 {
+    h1 {
         text-align: center;
-        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: 20px;
     }
 
     p {
@@ -37,6 +41,12 @@ body {
     span {
         margin-left: 10px;
     }
+}
+
+.definicaoPhishing:hover{
+    transform: translateY(0); /* Anima a posição ao passar o mouse */
+    box-shadow: 0 15px 30px rgba(0, 255, 255, 0.4); /* Altera a sombra */
+    border-color: #f06ee1; /* Muda a cor da borda */
 }
 
 .btns {
@@ -53,6 +63,7 @@ a {
 a:hover {
     color: black;
 }
+
 
 @media screen and (max-width: 768px) {
     footer {
