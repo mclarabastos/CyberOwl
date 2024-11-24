@@ -14,8 +14,27 @@
 }
 
 #VerificaUrl h1 {
-    margin-top: 100px;
+   padding-top: 100px;
+   text-align: center;
+   font-size: 40px;
 } 
+
+.btn{
+    background-color: rgb(49, 183, 183);
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 90px;
+}
+
+.form-control{
+    width: 90pxpx;
+    height: 45px;
+    border-radius: 25px;
+}
+
+#conteudo{
+    padding-bottom: 70px;
+}
 
 @media screen and (max-width:1080px) {
     footer {

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/acessibilidade.css" />
     <link rel="stylesheet" href="/css/rodape.css" />
     <link rel='stylesheet' href='/css/Verificador.css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="/js/menu.js" defer></script>
     <script src='/js/APIs.js'></script>
     <script src="/js/acessibilidade.js" defer></script>
@@ -62,27 +63,37 @@
             <div class="col-md">
                 <h1>Este link é seguro?</h1>
                 <p>Analise um URL que você deseja visitar para detectar malwares, sites falsos e ataques de phishing.</p>
-                <input type="text" class="form-control" id="url" placeholder="Digite a URL aqui"
-                    aria-label="Digite a URL" />
-                <button class="btn btn-primary" onclick="verificar();"> Verificar</button>
+                <input type="text" class="form-control mb-3" id="url" placeholder="Digite a URL aqui" aria-label="Digite a URL" />
+                <button class="btn d-flex align-items-center gap-2" onclick="verificar();" style="background-color: #00ffd5;">
+                    <span>Verificar</span>
+                    <i class="fa-solid fa-check-double" style="color: #000; font-size: 1.2rem;"></i>
+                </button>
                 <p id="res"></p>
             </div>
         </div>
     </main>
-
-    <div class="container" id="conteudo">
+    
+    <section id="conteudo" class="container mt-5">
         <h2>O que o Verificador de Links faz?</h2>
-        <p>O Verificador de Links é uma ferramenta de verificação de URL projetada para ajudar você a evitar malwares, ataques de phishing, botnets e sites falsos</p>
-        <div class="text1">
-            <h5>Evite ataques de phishing</h5>
+        <p>O Verificador de Links é uma ferramenta de verificação de URL projetada para ajudar você a evitar malwares, ataques de phishing, botnets e sites falsos.</p>
+    
+        <article class="text1">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-bug" style="color: #00ffd5; font-size: 1.5rem;"></i>
+                <h5>Evite ataques de phishing</h5>
+            </div>
             <p>Recebeu um e-mail ou mensagem de texto suspeita? Verifique o link antes de clicar: isso reduzirá muito as chances de você cair em um ataque de phishing.</p>
-        </div>
-        <div class="text2">
-            <h5>Bloqueie sites mal-intencionados</h5>
+        </article>
+        <article class="text2">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-ban" style="color: #00ffd5; font-size: 1.5rem;"></i>
+                <h5>Bloqueie sites mal-intencionados</h5>
+            </div>
             <p>Alguns sites estão repletos de malwares que aguardam para serem baixados e executados no seu dispositivo. O Verificador de Links informa você sobre isso antes que seja tarde demais.</p>
-        </div>
-    </div>
-
+        </article>
+    </section>
+    
+    
     <footer>
         <div id="footer_content">
     
