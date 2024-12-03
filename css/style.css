@@ -176,7 +176,7 @@ h2 {
   color: #ffffff;
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
   transform: translateY(-5px);
-  transition: all 0.5s ease; 
+  transition: all 0.5s ease;
   letter-spacing: 3px;
 
 
@@ -195,9 +195,12 @@ h2 {
 }
 
 .definicaoPhishing:hover {
-  transform: translateY(0); /* Anima a posição ao passar o mouse */
-  box-shadow: 0 15px 30px rgba(0, 255, 255, 0.4); /* Altera a sombra */
-  border-color: #ff00e1; /* Muda a cor da borda */
+  transform: translateY(0);
+  /* Anima a posição ao passar o mouse */
+  box-shadow: 0 15px 30px rgba(0, 255, 255, 0.4);
+  /* Altera a sombra */
+  border-color: #ff00e1;
+  /* Muda a cor da borda */
 }
 
 .ameaca {
@@ -206,14 +209,20 @@ h2 {
 }
 
 #imgCard {
-  max-width: 500px;
+  max-width: 450px;
   float: left;
   border-radius: 10px;
+  margin: 0;
   margin-right: 15px;
 }
 
+
 .amTxt h2 {
   font-size: 42px;
+}
+
+.amTxt {
+  margin-right: 25px;
 }
 
 .card {
@@ -273,15 +282,16 @@ h2 {
   }
 }
 
-#Noticias{
+#Noticias {
   margin-top: 70px;
   padding: 90px;
 }
 
-#Noticias p{
+#Noticias p {
   font-size: 20px;
 }
-.msg{
+
+.msg {
   color: white;
   font-size: 45px;
   border-right: 10px solid rgb(17, 206, 206);
@@ -291,32 +301,32 @@ h2 {
   animation: mark .5s step-end infinite, write 6s steps(22, end) infinite;
 }
 
-@keyframes mark{
+@keyframes mark {
 
-  50%{
+  50% {
     border-right-color: transparent;
   }
 }
 
 @keyframes write {
-    20%{
-      width: 26.5ch;
-    }
+  20% {
+    width: 26.5ch;
+  }
 
-    70%{
-      width: 26.5ch;
-    }
+  70% {
+    width: 26.5ch;
+  }
 
-    85%{
-      width: 0;
-    }
+  85% {
+    width: 0;
+  }
 
-    100%{
-      width: 26.5ch;
-    }
+  100% {
+    width: 26.5ch;
+  }
 }
 
-#botaoNoticia{
+#botaoNoticia {
   background-color: aqua;
   color: white;
   text-decoration: none;
@@ -328,48 +338,64 @@ h2 {
   align-items: center;
 }
 
-#botaoNoticia:hover{
+#botaoNoticia:hover {
   background: transparent;
-    border: 2px solid;
-    cursor: pointer;
+  border: 2px solid;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   #Noticias {
-    padding: 3%; 
+    padding: 3%;
   }
 
   #Noticias p {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   .msg {
     font-size: 2rem;
-    width: 20ch; 
+    width: 20ch;
   }
 
   #botaoNoticia {
-    font-size: 1rem; 
-    padding: 1rem 2rem; 
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .amTxt {
+    margin-right: 20px;
+  }
+
+  #imgCard {
+    max-width: 300px;
   }
 }
 
 @media (max-width: 480px) {
   #Noticias {
-    padding: 2%; 
+    padding: 2%;
   }
 
   #Noticias p {
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
   }
 
   .msg {
-    font-size: 1.5rem; 
-    width: 18ch; 
+    font-size: 1.5rem;
+    width: 18ch;
   }
 
   #botaoNoticia {
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
     padding: 0.8rem 1.5rem;
+  }
+
+  .amTxt {
+    margin-right: 20px;
+  }
+
+  #imgCard {
+    max-width: 300px;
   }
 }
