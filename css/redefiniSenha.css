@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-    background: rgb(24, 24, 26);
+    background: rgb(0, 0, 0);
     padding: 0 20px 0 20px;
     margin-top: 50px;
 }
@@ -18,7 +18,7 @@
 }
 
 .side-image {
-    background-image: url("../img/loginpage.jpg");
+    background-image: url("../img/WhatsApp\ Image\ 2024-11-21\ at\ 12.21.16.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
