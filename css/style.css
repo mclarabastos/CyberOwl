@@ -70,10 +70,7 @@ h1:not(.lg) {
   margin-top: 20px;
 }
 
-@media screen and (max-width:
-
-  /*730*/
-  1080px) {
+@media screen and (max-width: 768px) {
   #Introdução .container {
     flex-direction: column;
     text-align: center;
@@ -108,10 +105,7 @@ h1:not(.lg) {
   font-size: 1rem;
 }
 
-@media screen and (max-width:
-
-  /*730*/
-  1080px) {
+@media screen and (max-width:768px) {
   .columns {
     flex-direction: column;
     align-items: center;
@@ -136,10 +130,10 @@ h1:not(.lg) {
   color: #d3d3d3;
 }
 
-#texto h1 {
+/*#texto h1 {
   font-size: 55px;
 
-}
+}*/
 
 #texto p {
   font-size: 18px;
@@ -276,7 +270,7 @@ h2 {
   display: flex;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width:768px) {
   .fileira_card {
     display: block;
   }
