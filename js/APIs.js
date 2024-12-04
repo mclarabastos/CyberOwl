@@ -30,6 +30,8 @@
 // }
 
 function EnviarParaTodos() {
+    console.log("entrou");
+    
     //preventDefault();
     (function () {
         emailjs.init("sXvikJ0xI4ErxIC-d");
@@ -44,9 +46,25 @@ function EnviarParaTodos() {
             params = {
                 sendername: "Sistema Automático CyberOwl",
                 to: usuario.email, // Email recuperado do localStorage
-                subject: "Nova Notícia Disponível",
+                subject: "Bem-vindo(a) ao CyberOwl - Fique Informado Sobre Golpes Online!",//"Nova Notícia Disponível",
                 replyto: "no-replyto",
-                message: `Senhor(a) ${usuario.nome}, confira as novas notícias em https://www.tecmundo.com.br/phishing/noticias`
+                message: `Olá ${usuario.nome},
+
+                Obrigado por se cadastrar no CyberOwl! Estamos comprometidos em ajudar você a navegar com segurança no mundo digital.
+
+Para manter você informado(a) sobre os golpes mais recentes, como ataques de phishing e outras ameaças online, recomendamos acessar a página do TecMundo:
+
+👉 https://www.tecmundo.com.br/phishing/noticias
+
+Lembre- se:
+ Sempre desconfie de mensagens ou e - mails com links desconhecidos.
+ Use o Verificador de URLs no nosso site para garantir a segurança antes de acessar links suspeitos.
+Estamos aqui para apoiar você na construção de uma experiência digital mais segura.Fique atento(a) e continue contando com o CyberOwl!
+
+            Atenciosamente,
+                Equipe CyberOwl
+Vigilância e segurança digital ao seu alcance.`
+                // `Senhor(a) ${usuario.nome}, confira as novas notícias em https://www.tecmundo.com.br/phishing/noticias`
             }
             emailjs.send(ServiceID, TemplateID, params) // enviando o email                       
             .then(res => {
@@ -58,7 +76,7 @@ function EnviarParaTodos() {
     }, 60000);
 }
 
-//EnviarParaTodos(); //DEIXAR DESATIVADo ATE QUE SE TENHA UM EMAIL NO LOCALSTORAGE
+EnviarParaTodos(); //DEIXAR DESATIVADo ATE QUE SE TENHA UM EMAIL NO LOCALSTORAGE
 
 //API URL  
 async function scanUrl(url) {
