@@ -54,11 +54,8 @@ body {
 
 .definicaoPhishing:hover {
     transform: translateY(0);
-    /* Anima a posição ao passar o mouse */
     box-shadow: 0 15px 30px rgba(0, 255, 255, 0.4);
-    /* Altera a sombra */
     border-color: #f06ee1;
-    /* Muda a cor da borda */
 }
 
 .btns {
