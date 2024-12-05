@@ -87,6 +87,22 @@ async function ValidarLogin(event) {
     }
 }
 
+function customOk(message) {
+    return new Promise((resolve) => {
+        const confirmBox = document.getElementById("custom-confirm");
+        const confirmMessage = document.getElementById("confirm-message");
+        const yesButton = document.getElementById("confirm-yes");
+
+        confirmMessage.innerText = message;
+        confirmBox.classList.remove("hidden");
+
+        yesButton.onclick = () => {
+            confirmBox.classList.add("hidden");
+            resolve(true);
+        };
+    });
+};
+
 const togglePassword = document.getElementById('togglePassword');
 const passwordInput = document.getElementById('pass');
 

@@ -76,3 +76,19 @@ togglePassword.addEventListener('click', () => {
   togglePassword.classList.toggle('fa-eye');
   togglePassword.classList.toggle('fa-eye-slash');
 });
+
+function customOk(message) {
+    return new Promise((resolve) => {
+        const confirmBox = document.getElementById("custom-confirm");
+        const confirmMessage = document.getElementById("confirm-message");
+        const yesButton = document.getElementById("confirm-yes");
+
+        confirmMessage.innerText = message;
+        confirmBox.classList.remove("hidden");
+
+        yesButton.onclick = () => {
+            confirmBox.classList.add("hidden");
+            resolve(true);
+        };
+    });
+}
