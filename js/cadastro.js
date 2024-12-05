@@ -1,4 +1,4 @@
-function ValidarCadastro(event) {
+async function ValidarCadastro(event) {
     event.preventDefault();
 
     let senha_input = document.getElementById('senha').value;
@@ -32,7 +32,7 @@ function ValidarCadastro(event) {
         let emailExistente = usuarios.find(usuario => usuario.email === email_input);
 
         if (emailExistente) {
-            alert('Email já cadastrado. Tente outro.');
+            await customOk('Email já cadastrado. Tente outro.');
         } else {
             let novoUsuario = {
                 nome: nome_input,
@@ -42,7 +42,7 @@ function ValidarCadastro(event) {
             };
             usuarios.push(novoUsuario);
             localStorage.setItem('Usuarios', JSON.stringify(usuarios));
-            alert('Cadastro Realizado com Sucesso!');
+            await customOk('Cadastro Realizado com Sucesso!');
             window.location.href = '../html/login.html';
         }
     }
@@ -66,4 +66,20 @@ function bloquearCarac(e) {
     if (Caracter.match(Padrao)) {
         return true;
     }
+}
+
+function customOk(message) {
+    return new Promise((resolve) => {
+        const confirmBox = document.getElementById("custom-confirm");
+        const confirmMessage = document.getElementById("confirm-message");
+        const yesButton = document.getElementById("confirm-yes");
+
+        confirmMessage.innerText = message;
+        confirmBox.classList.remove("hidden");
+
+        yesButton.onclick = () => {
+            confirmBox.classList.add("hidden");
+            resolve(true); // Resolve a promise com true
+        };
+    });
 }

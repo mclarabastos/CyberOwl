@@ -76,7 +76,7 @@ Vigilância e segurança digital ao seu alcance.`
     }, 60000);
 }
 
-EnviarParaTodos(); //DEIXAR DESATIVADo ATE QUE SE TENHA UM EMAIL NO LOCALSTORAGE
+// EnviarParaTodos(); //DEIXAR DESATIVADo ATE QUE SE TENHA UM EMAIL NO LOCALSTORAGE
 
 //API URL  
 async function scanUrl(url) {

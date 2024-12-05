@@ -32,7 +32,7 @@ window.onload = function() {
 };
 
 // Função de validação de login
-function ValidarLogin(event) {
+async function ValidarLogin(event) {
     event.preventDefault();
 
     let senha_input = document.getElementById('pass').value; 
@@ -74,7 +74,7 @@ function ValidarLogin(event) {
         
         if (!!UsuarioV){
 
-            alert('Login realizado com sucesso!');
+            await customOk('Login realizado com sucesso!');
             
             // vai armazenar o email e senha nos cookies para o preenchimento automático
             definirCookie("email", email_input, 7);
@@ -89,15 +89,30 @@ function ValidarLogin(event) {
             sessionStorage.setItem("UsuarioAtivo", JSON.stringify(usuarioA))
             window.location.href = '../index.html';
         } else {
-            alert('Email ou senha incorretos.');
+            await customOk('Email ou senha incorretos.');
         }
     }
 }
 // opção para remover cookies de login ao sair
-function sair() {
-    definirCookie("email", "", -1); 
-    definirCookie("senha", "", -1); 
-    alert("Você saiu com sucesso.");
-    window.location.href = '../html/login.html';
-}
+// function sair() {
+//     definirCookie("email", "", -1); 
+//     definirCookie("senha", "", -1); 
+//     alert("Você saiu com sucesso.");
+//     window.location.href = '../html/login.html';
+// }
 
+function customOk(message) {
+    return new Promise((resolve) => {
+        const confirmBox = document.getElementById("custom-confirm");
+        const confirmMessage = document.getElementById("confirm-message");
+        const yesButton = document.getElementById("confirm-yes");
+
+        confirmMessage.innerText = message;
+        confirmBox.classList.remove("hidden");
+
+        yesButton.onclick = () => {
+            confirmBox.classList.add("hidden");
+            resolve(true); // Resolve a promise com true
+        };
+    });
+}
