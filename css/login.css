@@ -189,3 +189,27 @@ span a:hover {
     margin: 0px;
     padding: 20px;
 }
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%; 
+  }
+  
+  .password-container .input {
+    width: 100%;
+    padding-right: 2.5rem; 
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  
+  .password-container .toggle-icon {
+    position: absolute;
+    right: 10px; 
+    cursor: pointer;
+    color: #666;
+    font-size: 1rem;
+  }
+  

@@ -101,3 +101,14 @@ function sair() {
     window.location.href = '../html/login.html';
 }
 
+const togglePassword = document.getElementById('togglePassword');
+const passwordInput = document.getElementById('pass');
+
+togglePassword.addEventListener('click', () => {
+  const currentType = passwordInput.type;
+  passwordInput.type = currentType === 'password' ? 'text' : 'password';
+
+  togglePassword.classList.toggle('fa-eye');
+  togglePassword.classList.toggle('fa-eye-slash');
+});
+

@@ -67,3 +67,14 @@ function bloquearCarac(e) {
         return true;
     }
 }
+
+const togglePassword = document.getElementById('togglePassword');
+const passwordInput = document.getElementById('senha');
+
+togglePassword.addEventListener('click', () => {
+  const currentType = passwordInput.type;
+  passwordInput.type = currentType === 'password' ? 'text' : 'password';
+
+  togglePassword.classList.toggle('fa-eye');
+  togglePassword.classList.toggle('fa-eye-slash');
+});
