@@ -37,7 +37,7 @@ function EnviarParaTodos() {
         emailjs.init("sXvikJ0xI4ErxIC-d");
     })();
 
-    setInterval(function () {
+    // setInterval(function () {
         const Emails_Usuarios = JSON.parse(localStorage.getItem('Usuarios'));
         var params = {}
         const ServiceID = "service_har6r6s"
@@ -73,10 +73,10 @@ Vigilância e segurança digital ao seu alcance.`
                 .catch(err => console.log(`erro ao enviar o e-mail de verificação, verifique se esse e-mail existe ${usuario.email}: `, err));           
         });
 
-    }, 60000);
+    // }, 30000);
 }
 
-// EnviarParaTodos(); //DEIXAR DESATIVADo ATE QUE SE TENHA UM EMAIL NO LOCALSTORAGE
+EnviarParaTodos(); //DEIXAR DESATIVADo ATE QUE SE TENHA UM EMAIL NO LOCALSTORAGE
 
 //API URL  
 async function scanUrl(url) {
