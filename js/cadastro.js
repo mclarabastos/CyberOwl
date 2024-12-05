@@ -10,7 +10,6 @@ async function ValidarCadastro(event) {
     let SenhaRegex = /^(?=.*[A-Z])(?=.*\W).{8,}$/;
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Validação para o campo de  Email (minímo de 2 digitos antes do @ e preencher com .com ou .org no final)
     if (!emailRegex.test(email_input)) {
         document.getElementById('email-incorreta').textContent = 'Por favor, preencha o campo com um Email Válido';
         validar = false;
@@ -18,7 +17,6 @@ async function ValidarCadastro(event) {
         document.getElementById('email-incorreta').textContent = '';
     }
 
-    // Validação para o campo de Senha (minímo de 8 caracteres, uma letra e um símbolo)
     if (!SenhaRegex.test(senha_input)) {
         document.getElementById('senha-incorreta').textContent = 'A senha deve ter no mínimo 8 caracteres, uma letra maiúscula e um símbolo.';
         validar = false;
@@ -79,7 +77,7 @@ function customOk(message) {
 
         yesButton.onclick = () => {
             confirmBox.classList.add("hidden");
-            resolve(true); // Resolve a promise com true
+            resolve(true); 
         };
     });
 }

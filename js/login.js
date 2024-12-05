@@ -1,4 +1,3 @@
-// implementação dos cookies.
 function definirCookie(nome, valor, dias) {
     let data = new Date();
     data.setTime(data.getTime() + (dias * 24 * 60 * 60 * 1000));
@@ -18,7 +17,6 @@ function obterCookie(nome) {
 }
 
 window.onload = function() {
-    // vai preencher automaticamente os campos login e senha
     const emailCookie = obterCookie('email');
     const senhaCookie = obterCookie('senha');
     
@@ -31,7 +29,6 @@ window.onload = function() {
     console.log('Senha recuperada do cookie:', senhaCookie);
 };
 
-// Função de validação de login
 async function ValidarLogin(event) {
     event.preventDefault();
 
@@ -41,7 +38,6 @@ async function ValidarLogin(event) {
     let SenhaRegex = /^(?=.*[A-Z])(?=.*\W).{8,}$/;
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Validação de email
     if (!emailRegex.test(email_input)) {
         document.getElementById('email-incorreto').textContent = 'Por favor, preencha o campo com um Email Válido';
         validar = false;
@@ -49,7 +45,6 @@ async function ValidarLogin(event) {
         document.getElementById('email-incorreto').textContent = '';
     }
 
-    // Validação de senha
     if (!SenhaRegex.test(senha_input)) {
         document.getElementById('senha-incorreta').textContent = 'A senha deve ter no mínimo 8 caracteres, uma letra maiúscula e um símbolo.';
         validar = false;
@@ -58,7 +53,6 @@ async function ValidarLogin(event) {
     }
 
     if (validar) {
-        // Verifica se o email e a senha digitada existe
         const Usuarios = JSON.parse(localStorage.getItem('Usuarios'));
         const UsuarioV = Usuarios.find(usuario =>
             usuario.email === email_input && usuario.senha === senha_input
@@ -68,7 +62,7 @@ async function ValidarLogin(event) {
         for (let i = 0; i < Usuarios.length; i++) {
             if (Usuarios[i].email === email_input) {
                 nomeusuarioativo = Usuarios[i].nome;
-                break; // Interrompe o loop
+                break; 
             }
         }
         
@@ -76,7 +70,6 @@ async function ValidarLogin(event) {
 
             await customOk('Login realizado com sucesso!');
             
-            // vai armazenar o email e senha nos cookies para o preenchimento automático
             definirCookie("email", email_input, 7);
             definirCookie("senha", senha_input, 7);
             sessionStorage.setItem("LoginAtivo",true)
@@ -93,13 +86,6 @@ async function ValidarLogin(event) {
         }
     }
 }
-// opção para remover cookies de login ao sair
-// function sair() {
-//     definirCookie("email", "", -1); 
-//     definirCookie("senha", "", -1); 
-//     alert("Você saiu com sucesso.");
-//     window.location.href = '../html/login.html';
-// }
 
 function customOk(message) {
     return new Promise((resolve) => {
@@ -112,7 +98,7 @@ function customOk(message) {
 
         yesButton.onclick = () => {
             confirmBox.classList.add("hidden");
-            resolve(true); // Resolve a promise com true
+            resolve(true); 
         };
     });
 }
