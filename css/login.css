@@ -1,4 +1,3 @@
-/* POPPINS FONT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
@@ -101,7 +100,6 @@ i {
 
 
 .input-field label {
-    /* position: absolute; */
     top: 15px;
     left: 10px;
     pointer-events: none;

@@ -70,13 +70,13 @@ Vigilância e segurança digital ao seu alcance.`
             .then(res => {
                 console.log(`Email automático enviado com sucesso para ${usuario.email}!`);
             })
-                .catch(err => alert(`erro ao enviar o e-mail de verificação, verifique se esse e-mail existe ${usuario.email}: `, err));           
+                .catch(err => console.log(`erro ao enviar o e-mail de verificação, verifique se esse e-mail existe ${usuario.email}: `, err));           
         });
 
     }, 60000);
 }
 
-EnviarParaTodos(); //DEIXAR DESATIVADo ATE QUE SE TENHA UM EMAIL NO LOCALSTORAGE
+// EnviarParaTodos(); //DEIXAR DESATIVADo ATE QUE SE TENHA UM EMAIL NO LOCALSTORAGE
 
 //API URL  
 async function scanUrl(url) {
@@ -151,5 +151,5 @@ async function scanUrl(url) {
 }
 function verificar() {
     var url = document.getElementById("url").value;
-    scanUrl(url);
+    scanUrl(url.trim());
 }

@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - CyberOwl</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="../css/login.css" />
     <link rel="stylesheet" href="../css/menu.css" />
     <link
@@ -16,7 +14,7 @@
     />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/rodape.css">
-    <!-- JS -->
+    <link rel="stylesheet" href="../css/mensagem.css">
     <script src="../js/menu.js" defer></script>
     <script src="../js/login.js" defer></script>
   </head>
@@ -46,7 +44,6 @@
       </nav>
     </header>
 
-    <!-- Main Content -->
     <div class="wrapper">
       <div class="principal">
         <div class="row">
@@ -151,5 +148,11 @@
         2024 todos os direitos reservados
       </div>
     </footer>
+    <div id="custom-confirm" class="hidden">
+      <div class="confirm-box">
+        <p id="confirm-message">Você tem certeza?</p>
+        <button id="confirm-yes">OK</button>
+      </div>
+    </div>
   </body>
 </html>

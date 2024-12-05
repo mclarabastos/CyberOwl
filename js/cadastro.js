@@ -1,4 +1,4 @@
-function ValidarCadastro(event) {
+async function ValidarCadastro(event) {
     event.preventDefault();
 
     let senha_input = document.getElementById('senha').value;
@@ -10,7 +10,6 @@ function ValidarCadastro(event) {
     let SenhaRegex = /^(?=.*[A-Z])(?=.*\W).{8,}$/;
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Validação para o campo de  Email (minímo de 2 digitos antes do @ e preencher com .com ou .org no final)
     if (!emailRegex.test(email_input)) {
         document.getElementById('email-incorreta').textContent = 'Por favor, preencha o campo com um Email Válido';
         validar = false;
@@ -18,7 +17,6 @@ function ValidarCadastro(event) {
         document.getElementById('email-incorreta').textContent = '';
     }
 
-    // Validação para o campo de Senha (minímo de 8 caracteres, uma letra e um símbolo)
     if (!SenhaRegex.test(senha_input)) {
         document.getElementById('senha-incorreta').textContent = 'A senha deve ter no mínimo 8 caracteres, uma letra maiúscula e um símbolo.';
         validar = false;
@@ -32,7 +30,7 @@ function ValidarCadastro(event) {
         let emailExistente = usuarios.find(usuario => usuario.email === email_input);
 
         if (emailExistente) {
-            alert('Email já cadastrado. Tente outro.');
+            await customOk('Email já cadastrado. Tente outro.');
         } else {
             let novoUsuario = {
                 nome: nome_input,
@@ -42,7 +40,7 @@ function ValidarCadastro(event) {
             };
             usuarios.push(novoUsuario);
             localStorage.setItem('Usuarios', JSON.stringify(usuarios));
-            alert('Cadastro Realizado com Sucesso!');
+            await customOk('Cadastro Realizado com Sucesso!');
             window.location.href = '../html/login.html';
         }
     }
