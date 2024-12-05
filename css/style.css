@@ -3,13 +3,10 @@
 * {
   text-align: justify;
   box-sizing: border-box;
-  /* background-color: #fff !important;
-  color: black !important; */
 }
 
 html {
   scroll-behavior: smooth;
-  /* color: black; */
 }
 
 body {
@@ -66,7 +63,6 @@ h1:not(.lg) {
 }
 
 #img img {
-  /* ; width: 75%; */
   margin-top: 20px;
 }
 
@@ -77,7 +73,6 @@ h1:not(.lg) {
   }
 
   #img img {
-    /* width: 75%; */
     margin-top: 20px;
   }
 }
@@ -129,11 +124,6 @@ h1:not(.lg) {
 .card-text {
   color: #d3d3d3;
 }
-
-/*#texto h1 {
-  font-size: 55px;
-
-}*/
 
 #texto p {
   font-size: 18px;
@@ -190,11 +180,8 @@ h2 {
 
 .definicaoPhishing:hover {
   transform: translateY(0);
-  /* Anima a posição ao passar o mouse */
   box-shadow: 0 15px 30px rgba(0, 255, 255, 0.4);
-  /* Altera a sombra */
   border-color: #ff00e1;
-  /* Muda a cor da borda */
 }
 
 .ameaca {
